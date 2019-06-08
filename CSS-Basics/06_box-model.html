@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Box Model</title>
+    <style>
+        /*CSS Reset Eric Meyers*/
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        h1, h2, h3{
+            padding: 7,12;
+        }
+
+
+        .box{
+            border: 2px #777 solid; 
+            background: #f4f4f4;
+            /* width: 500px; */
+
+            /* padding on all sides */
+            padding: 20px;
+
+            /* margin on all sides */
+            margin: 20px;
+
+            /* padding per side */
+            padding-top: 10px;
+            padding-right: 20px;
+            padding-bottom: 10px;
+            padding-left: 20;
+            /* paddingShorthand: padding: top, right, bottom, left; */
+            padding: 10, 20, 10, 20;
+            /* paddingShorthand: padding: top/bottom, right/left */
+            padding: 10, 20;
+            
+        }
+        .box p{
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h3>Box One</h3>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates harum tempora ipsa consectetur cumque exercitationem similique totam beatae vel praesentium.
+        </p>
+    </div>
+    <div class="box">
+        <h3>Box Two</h3>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos vitae consequuntur aliquid dolores porro aperiam nobis minus a quas, alias iure nostrum dolorum quasi itaque ducimus eaque neque dolore est quo ex beatae!
+        </p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,270 @@
+https://github.com/PacktPublishing/Modern-HTML-and-CSS-from-the-Beginning-Including-Sass
+
+h1- h6, 
+
+<p></p>
+
+
+selfClosing
+    <br/>
+        <br> is just fine without '/'
+
+----------------------------
+doctype declaration: 
+    <!DOCTYPE html> 
+    
+
+see source code in browser
+    -'CTRL' + 'U'
+
+
+--------------------------
+INSTALL live-server
+    right-click
+        >open in live server 
+
+shortcut: 
+    "!" 
+        -returns doctype declaration, 
+
+------------------------------------
+<meta charset="UTF-8">
+    unicode
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    -allows for full width of site on the screen
+
+<meta http-equiv="X-UA-Compatible" content="ie=edge" >
+    -for microsoft
+
+<!--meta for search-->
+    <title>Document</title>
+        <!--Shows in the search engine as the title-->
+    <meta name="description" content="this is great meta info" >
+        -char limit? 
+    <meta name="keywords" content="web dev, etc" >
+        -up to 8
+    <meta name="robots" content="NOINDEX, NOFOLLOW">
+
+---------------------------------------------
+headings paragraphs, & typography
+tip:
+    <h1></h1>
+        advise ONLY 1 per page
+    <strong></strong>
+    <em></em>
+    <br>
+    <del></del>
+        delete "strikethrough"
+    
+
+-=--------------------------------------
+Links and Images
+
+<a href="google.com">Link Text</a>
+    -open in new tab
+        -Target Attribute
+            target="_blank"
+<img src="../images/different-doctype-declarations.png" alt="Notes Image" >
+
+ShortCuts: 
+    move a line of text up/down
+        -ALT + ARROW
+    copy text up/down
+        -SHIFT + ALT + ARROW-DIRECTION
+    
+tips: 
+    Sources: 
+        https://source.upsplash.com
+            -image placeholder source 
+
+--------------------------------
+Lists and Tables
+
+Lists
+    attributes
+        type=
+            i, I
+                -roman numerals
+            1
+                -default
+            A, a 
+
+Tables 
+    <table>
+        <thead>
+            <tr>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>            
+shortcuts:
+    li count
+        "li*4"
+            list item count specified
+
+----------------------------------------------------
+Forms & Input 
+
+<label for="firstName">FirstName: </label>
+<input type="text" id="FirstName">
+    
+attributes of note: 
+    -placeholder
+    -checked
+    -selected
+
+shortcuts: 
+    input:type 
+        input:email
+    control-D 
+        select the next similar field 
+
+
+------------------------------------
+Block & Inline Elements
+
+Block Level: (According to W3Schools)
+    address, article, aside, blockquote, canvas, dd,
+    div, dl, dt, fieldset, figcaption, figure, footer, 
+    form, h1-h6, header, hr, li, main, nav, noscript, 
+    ol, output, p, pre, section, table, tfoot, ul, video
+
+Inline Elements: 
+    a, abbr, acronym, b, bdo, big, br, button, cite, code, 
+    dfn, em, i, img, input, dbd, label, map, object, q, 
+    samp, script, select, small, span, strong, sub, sup, 
+    textarea, time, tt, var
+
+Inline-Block    
+    will talk about it later
+
+
+------------------------------------------------
+Divs & Spans 
+
+divs 
+
+
+
+spans
+
+
+shortcuts: 
+    div#about 
+        generates div with an id= about 
+        #about 
+            creates a div implicitly
+        h1#about 
+            h1 with the Id
+
+
+ids vs classes
+    ids 
+        individual
+    classes 
+        for sets of elements 
+    
+
+.card{
+            border: 1px solid #ccc;
+            background: #f4f4f4; 
+            padding: 20px; 
+            margin-bottom: 10px;
+        }
+
+&copy; 
+    copyright
+
+
+-------------------------------------------------
+Semantic Tags 
+
+header, footer, nav, main, section, article, aside 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
