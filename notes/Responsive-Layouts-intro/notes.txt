@@ -1,0 +1,58 @@
+
+@media(min-width: 500px)
+    -mobile first design: 
+        brings in 'min-width' for styles after the base config view
+
+Tablet Common Breakpoint: 
+    768px
+
+@media only screen and (max-width: 500px){
+@media(min-width: 501px) and (max-width: 768px){
+@media(min-width: 768px) and (max-width: 1200px){
+@media(min-width: 1201px){
+
+
+______________________________________________________
+em
+    relative to font size of the parent container
+rem
+    relative to the root html element
+
+- - - - - -
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
