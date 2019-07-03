@@ -1,0 +1,66 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Float & Align</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.4rem
+        }
+        .container {
+            max-width: 960px;
+            margin-left: auto; 
+            margin-right: auto;
+            margin-top: 30pt;
+            margin-bottom: 30pt;
+        }
+        .clear {
+            clear: both;
+        }
+        .box {
+            background: #f4f4f4;
+            border: 1px solid #333;
+            padding: 20px;
+            margin-bottom: 15pt;
+        }
+        .box p {
+            /* Text Align */
+            text-align: left;
+        }
+        #box-2 {
+            float: left;
+            width: 68%;
+        }
+        #box-3{
+            float: right;
+            width: 30%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div id="box-1" class="box">
+            <h3>Heading</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae illum voluptate iste impedit deserunt nihil, esse perspiciatis voluptas magni. Illum doloribus eius hic ut fugiat?</p>
+        </div>
+        <div id="box-2" class="box">
+            <h3>Heading</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae illum voluptate iste impedit deserunt nihil, esse perspiciatis voluptas magni. Illum doloribus eius hic ut fugiat?</p>
+        </div>
+        <div id="box-3" class="box">
+                <h3>Heading</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae illum voluptate iste impedit deserunt nihil, esse perspiciatis voluptas magni. Illum doloribus eius hic ut fugiat?</p>
+        </div> 
+        <div id="box-4" class="box clear">
+                <h3>Heading</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae illum voluptate iste impedit deserunt nihil, esse perspiciatis voluptas magni. Illum doloribus eius hic ut fugiat?</p>
+        </div> 
+    </div>
+</body>
+</html>

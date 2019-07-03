@@ -1,0 +1,338 @@
+CSS Basics: 
+___________________
+Intro: 
+    Overview
+
+
+___________________________
+Implementing CSS 
+
+Inline, 
+Internal, 
+External
+
+Naming Conventions
+    class names: 
+        primary-heading
+
+
+
+Resources
+    fonts.google.com
+        from the googleApi families
+
+Font-Size: 
+    standard: 16px, 
+    preferences: [
+        line-height: 1.6em;
+    ]
+
+
+--------------------------------------------
+5/28/2019 06:29 am
+Colors
+
+common hex: 
+    333: dark grey
+    ccc: 
+
+    "color-hex.com",
+    "htmlColorCodes.com",
+
+-----------------------------------
+backgrounds and Borders
+
+img file types
+    png: 
+        CAN be transparent
+    jpg: 
+        CANNOT BE transparent
+
+
+background-size: cover; 
+background-attachment: fixed;
+
+box-sizing: border-box;
+    pushes inside instead of pushing/adding to the width of the parent element.
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* padding per side */
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-left: 20;
+    /* paddingShorthand: padding: top, right, bottom, left; */
+    padding: 10, 20, 10, 20;
+    /* paddingShorthand: padding: top/bottom, right/left */
+    padding: 10, 20;
+
+
+
+------------------------------------------
+Float & Alignment
+
+How to Center Content: 
+    Margin: auto
+        gives equal margin on both sides
+    container div
+    
+    Eliminate Horizontal Scrolling
+        max-width: 960px /*or other width */
+
+--------------------------------------------
+Links & Button Links & Buttns
+
+a {
+            color: #333;
+            text-decoration: none;
+
+        }
+
+        a:hover {
+            color: coral;
+            /*font-size: 25px;*/
+            text-decoration: underline;
+        }
+        a:visited {
+            color: purple;
+        }
+        a:active{
+            color: darkgreen;
+        }
+
+        /*button styling */
+        .btn {
+            background: #4c6ca0;
+            color: #fff;
+            border: none;
+            font-size: 16px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer; 
+        }
+        .btn:hover{
+            color: #f4f4f4;
+            background: #446190;
+        }
+
+--------------------------------------
+nav menu styling 
+    .menu {
+        list-style: none;
+    }
+    Normally a list has 40 pixels of padding on the left 
+
+    Overflow: auto;
+        background will pertain to the content inside of it 
+        "hidden"
+            -removes 
+    :hover 
+        don't put it on the padding on the list-item (<li></li>)
+            otherwise the entire block might not change. 
+- - - - -  - - - - - - - - - - - - - - - - - - - - - - 
+
+<ul class="navbar">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+            
+    </ul>
+    <ul class="side-menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+        
+    </ul>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .navbar {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            background: #4c6ca0;
+            border-radius: 5px;
+            overflow: auto;
+        }
+        .navbar li {
+            float: left;
+        }
+        .navbar li a{
+            display: block;
+            color: #fff;
+            text-decoration: none;
+            padding: 15px 20px;
+        }
+        .navbar li a:hover {
+            background-color: #446190;
+            color:#f4f4f4;
+        }
+
+        /*side-Menu*/
+        /*the 'ul' element */
+        .side-menu {
+            list-style: none;
+            border: 1px #ddd solid;
+            border-radius: 10px;
+            width: 300px;
+            padding: 20px;
+        }
+        .side-menu li {
+            font-size: 18px;
+            line-height: 2.4em;
+            border-bottom: dotted 1px #ddd;
+        }
+        .side-menu li:last-child{
+            border: none;
+        }
+        .side-menu a {
+            color: #333;
+            text-decoration: none;
+        }
+        .side-menu li a:hover {
+            color: coral;
+        }
+    </style>
+
+-----------------------------------------------------
+Display
+    Inline, Block, & Inline-Block 
+    Inline: 
+        cannot use width 
+    Block: 
+        margin: auto;
+            only works as a block element 
+
+-------------------------------------------------------
+CSS: Positioning
+    position: 
+        static; 
+            /*default*/
+            not effected by (top, bottom, left, right)
+        relative: 
+            moved from its normal position 
+        absolute: 
+            relative to the parent that is also relative
+                inner div's absolute & outer being relative 
+                    position within the parent
+            absolute position within the container  
+                #box-2{
+                    background-color: thistle;
+                    top: 100;
+                    left: 100;
+                    position: absolute;
+                }/*100 from the top of the container, 100 from the leftmost of the container */
+        fixed: 
+            positioned relative to the viewport 
+        sticky: 
+            scroll position 
+            set the point that the element will stick to the view-pointer
+                 #box-5{
+                    background-color: cornflowerblue;
+                    position: sticky;
+                    top: 0;
+                }
+    z-index: 
+        higher the number, the closer to the user 
+    
+-------------------------------------
+form challenge:
+
+
+
+
+------------------------------------------
+display: 'none' vs Visibility
+    display: none;
+        removes the element from the Object-Model 
+    Visibility: hidden; 
+        maintains the location of the element in the Object-Model but does not show the design of the element or text. 
+
+Precendence Rules: 
+    .hello{
+            color: red;
+        }
+    h1{
+        /* display: none; */
+        /* visibility: hidden; */
+        color: blue !important;
+    }
+    /*bc of the '!important' keyword, 'blue' will still be the text color, overriding the precedent of the class
+negative-margin: 
+    moves the element toward the negative margin declaration
+
+----------------------------------------------------------------------
+bootstrap themes
+    -
+
+
+-------------------------------------------
+tips: 
+    font-awesome 
+        icons
+    
+-------------------------------------
+showcase & home info
+    /*Utilities */
+        .container{
+            margin: auto;
+            max-width: 1100;
+            overflow: auto;
+            padding: 0 0;
+        }
+        .text-primary{
+            color: #f7c08a;
+        }
+        .lead-text{
+            font-size: 20px;
+        }
+        .btn{
+            display: inline-block;
+            font-size: 18px;
+            background-color: #333;;
+            color: #fff;
+            
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 13px;
+            padding-bottom: 13px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .btn:hover{
+            background-color: #f7c08a;
+            color: #333;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

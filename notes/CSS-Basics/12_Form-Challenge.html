@@ -1,0 +1,235 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <style>
+            * {
+              /* 
+              -May want to add "border-box for "box-sizing so padding does not affect width
+              -Reset margin and padding 
+             */
+             box-sizing: border-box;
+             padding: 0;
+             margin: 0;
+             font-family: 'Raleway', Arial, Helvetica, sans-serif;
+            }
+      
+            body {
+              /* 
+                -Background color is #344a72
+              */
+              background-color: white;
+              line-height: 1.8;
+            }
+      
+            a {
+              /* 
+              Underlined links are ugly :)
+             */
+             text-decoration: none;
+            }
+
+            #container #logo-container {
+                display: block;
+                width: 100%;
+            }
+            #container #logo-container img{
+                width: 250px;
+                display: block;
+                margin-left:auto;
+                margin-right: auto;
+                margin-top: 30px;
+            }
+      
+            #container {
+              /* 
+              -Remember, margin: auto on left and right will center a block element 
+              -I would also set a "max-width" for responsiveness
+              -May want to add some padding
+              */
+              max-width: 540px;
+              margin-left: auto;
+              margin-right: auto;
+
+              display: block;
+            }
+      
+            .form-wrap {
+              /* 
+                This is the white area around the form and heading, etc
+              */
+              background-color: #344a72;
+              margin-left: auto;
+              margin-right: auto;
+              width: 85%;
+              padding-left: 20px;
+              padding-right: 20px;
+              margin-top: 35px;
+            }
+            .form-wrap .form-header {
+                color: whitesmoke;
+                margin-left: auto;
+                margin-right: auto;
+                width: 100%;
+                text-align: center;
+                padding-bottom: 20px;
+
+            }
+            .form-wrap .form-header h2{
+                font-size: 14px;
+            }
+            /* .form-wrap .form-title,
+            .form-wrap .form-subtitle {
+              /* 
+                May want to center these
+              */
+              /*
+              margin-left: auto;
+              margin-right: auto;
+            } */
+      
+            .form-wrap .form-group {
+              /* 
+                Each label, input is wrapped in .form-group
+              */
+              width: 100%;
+              margin-left:auto;
+              margin-right:auto;
+            }
+            
+            /*block display for input & label*/
+            .form-wrap .form-group label, 
+            .form-wrap .form-group input {
+              /* 
+                Label should be turned into a block element
+              */
+                display: block;
+                padding: 3px;
+            }
+            .form-wrap .form-group {
+                color: whitesmoke;
+                
+            }
+      
+            .form-wrap .form-group input {
+              /* 
+                Inputs should reach accross the .form-wrap 100% and have some padding
+              */
+              width: 100%;
+              border: none;
+              height: 25px;
+              border: #ddd 1px solid;
+              border-radius: 3px;
+            }
+      
+            .form-wrap button {
+              /* 
+                Button should wrap accross 100% and display as block
+                Background color for button is #49c1a2
+              */
+              display: block;
+              width: 100%;
+              margin-top: 15px;
+              margin-bottom: 15px;
+              border-radius: 6px;
+              height: 35px;
+              background-color: #49c1a2;
+              box-shadow: none;
+              
+            }
+      
+            .form-wrap button:hover {
+              /* 
+                Hover background color for button is #37a08e
+              */
+              background-color: #37a08e;
+              cursor: pointer;
+            }
+      
+            .form-wrap .bottom-text {
+              /* 
+                Bottom text is smaller
+              */
+              font-size: smaller;
+              text-align: center;
+              padding-bottom: 10px;
+            }
+            .form-wrap .bottom-text a{
+                color: lightblue;                
+
+            }
+            .form-wrap .bottom-text a:hover{
+                text-decoration: underline;
+            }
+      
+            footer {
+              /* 
+              Should be centered
+             */
+             display: block;
+             margin-left: auto;
+             margin-right: auto;
+             width: 100%;
+             text-align: center;
+             margin-bottom: 50px;
+             margin-top: 25px;
+             color: darkblue;
+                font-size: small;
+            }
+      
+            footer a {
+              /* 
+                Footer link color is #49c1a2
+              */
+              color: #49c1a2;
+            }
+    </style>
+</header>
+<body>
+    <div id="container">
+        <div id="logo-container">
+            <img src="img/CareLynx-Logo.jpg" alt="CareLynx Logo">
+        </div>
+        <div class="form-wrap">
+            <div class="form-header">
+                <h1 class="form-title">Sign In</h1>
+                <h2 class="form-subtitle">Changing the Way Healthcare is Delivered in the United States</h2>
+            </div>
+            <form action="" method="post">
+                <div class="form-group">
+                    <label for="first-name">First Name</label>
+                    <input type="text" name="firstname" id="first-name">
+                </div>
+                <div class="form-group">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" name="firstname"id="first-name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" name="password " id="password">
+                </div>
+                <div class="form-group">
+                    <label for="password2">Confirm Password</label>
+                    <input type="password" name="password2" id="password2">
+                </div>
+                <button type="submit" class="btn">Sign Up</button>
+                <p class="bottom-text">By Clicking the 'Sign Up' Button, you agree to our 
+                    <a href="#">Terms &amp; Conditions</a> and <a href="#" >Privacy Policy</a>
+                </p>
+            </form>
+        </div>
+        <footer>
+            <p>Already Have an account? 
+                <a href="#">Login Here</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
