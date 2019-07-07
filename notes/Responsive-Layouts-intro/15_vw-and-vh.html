@@ -1,0 +1,64 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>vW and vH Units</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        header {
+            background: #333 url("https://source.unsplash.com/daily")
+                no-repeat center center/cover;
+            color: #fff;
+            height: 100vh;
+            /* width: 50vw; */
+            text-align: center;
+            padding:2rem;
+            padding-top: 15rem;
+        }
+        header h1 {
+            font-size: 3rem;
+        }
+        header p{
+            margin: 1rem 0;
+        }
+        
+
+        .btn{
+            display: inline-block;
+            text-decoration: none;
+            background: #f4f4f4;
+            color: #333;
+            padding: .75rem 2rem;
+        }
+        @media(max-height: 450px), (max-width: 740px){
+            header{
+                padding-top: 4rem;
+            }
+            header .btn{
+                margin-top: 2.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Website</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus ut eaque rem nostrum eligendi asperiores.</p>
+        <a href="#" class="btn">Find Out More</a>
+    </header>
+    <section>
+        <h3>About Our Company</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam quidem esse molestias sint at minima quo velit quam vel aspernatur! Qui odit dolores veniam fugiat sunt saepe nulla, eaque provident dolore temporibus! Est temporibus, eveniet facilis consectetur fugit eum rerum tenetur neque maxime unde optio facere porro quis quia nihil!</p>
+    </section>
+</body>
+</html>

@@ -1,0 +1,31 @@
+Web Hosting
+    -Shared Server
+        cheapest usually
+        -usually cannot login as 'root' or SSH
+    -Virtual private server 
+        -more than 1 website
+        -more control
+        -examples: [
+            Inmotion Hosting,
+            HostGator,
+            BlueHost
+        ]
+    -Reseller Hosting: 
+        -create 
+        whcms: 
+            for billing; turn key utilities 
+        know: 
+            dns, 
+            dev-ops
+        examples :[
+            Inmotion Hosting,
+            HostGator
+        ]
+    -dedicated server: 
+        individual machine you own in a server farm
+        harder to manage
+        examples :[
+            Inmotion Hosting,
+            HostGator, 
+            BlueHost
+        ]

@@ -1,0 +1,266 @@
+Flexbox Chapter: 
+    justify-content: 
+        Align along the main axis (Horizontal)
+    align-items: 
+        Align items along the Cross Axis (Vertical)
+    align-content: 
+        Align when extra space in Cross Axis 
+    
+    flex-direction: column; 
+        horizontal stacking
+    flex-direction: row;
+        .item:first-child{
+            flex: 1;
+        }/*creates a row with equal sized parts*/
+    flex-flow: row wrap;
+        flex-direction + flex-wrap 
+    
+
+    /* justify-content: 
+                flex-start; */
+                flex-end; */
+                space-around; */
+                space-between; */
+                space-evenly; */
+    align-items: 
+        stretch: 
+            default
+        center, 
+        flex-start, 
+        flex-end 
+    
+.container .item1{
+            order: 3;
+        }
+        .container .item2{
+            align-self: center;
+            order: 2;
+        }
+        .container .item3{
+            order: 1;
+        }
+
+_________________________________________
+project notes Start        
+
+/* style reset/start-up styles */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+
+p{
+    margin: 0.75rem 0;
+
+}
+
+- - - - - - - - - - - - - - -
+flex on navbar notes: 
+    justify-content: space-between; 
+        -using 'space-between' bc we want 'space between' the content in the Flexbox
+        MDN: 
+            /* Distributed alignment */
+                justify-content: space-between; /* Distribute items evenly
+                    -The first item is flush with the start,
+                    the last is flush with the end */
+
+_________________________________________
+video2, 
+Showcase Header, 
+
+    rgba
+        red, green, blue,
+        a = essentially opacity. 
+
+    <!--header-->
+    <header id="showcase">
+        <div class="showcase-content">  
+        <!--
+            flexbox container, 
+            flex-direction:column;
+            justify-content: center;
+            align-items: center;
+        -->
+            <h1 class="l-heading">
+                The Sky Is The Limit
+            </h1>
+            <p class="text-lead">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum illo optio error necessitatibus. Expedita, quidem!
+            </p>
+            <a href="#what" class="btn">Read More</a>
+        </div>
+    </header>
+
+_________________________________________
+section what we do 
+
+
+
+_________________________________________
+section Who We Are 
+
+
+
+_________________________________________
+section Clients
+
+
+
+
+_________________________________________
+section Contact & Map
+
+Api Key: 
+    AIzaSyBy8IsD5a_ITgvCmJ7SEe5RgqdN4PPUUDU
+
+_________________________________________
+footer, 
+
+
+
+_________________________________________
+jquery scroller
+
+jQuery Cdn 
+    "https://crm.bhn.net/ncobject.jsp?id=9133175975513323306&tab=_Summary&customerID=243920502&siteId=3&recentCustomer=true&premiseKey=2439205#dashboardId=9133436941413870709"
+    -don't use slim!!!
+        -doesn't have the 'scroller' function
+    -this should be added BEFORE the local js file bc main.js will be running functions from jQuery 
+
+_________________________________________
+Make Site Responsive
+    Widescreen & Tablets
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-------------------------------------
+Modern Javascript From the Beginning
+    -Another Book Brad has Authored
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

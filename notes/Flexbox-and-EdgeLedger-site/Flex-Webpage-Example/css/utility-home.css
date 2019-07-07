@@ -1,0 +1,101 @@
+
+
+
+
+/* utility-home.css */
+/* Utility Classes */
+.container{
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 2rem;
+    
+    overflow: hidden;
+}
+
+/* Background Utilities */
+    .bg-light{
+        background-color: #fff; /*light gray*/
+        color: #151515; /* very dark gray, almost black*/
+    }
+    .bg-dark{
+        background-color: #151515;
+        color: #fff;
+    }
+    .bg-primary{
+        color: #fff;
+        background: #93cb52;
+    }
+/* button utilities */
+    .btn{
+        display: inline-block;
+        color: #fff;
+        background: #93cb52;
+        padding: .5rem 2rem;
+        border: none;
+        border-radius: 5px;
+    }
+    .btn:hover{
+        background-color: #7ab436;
+        cursor: pointer;
+    }
+    .btn-dark{
+        background: #333;
+        color: #fff;
+    }
+
+
+/* text utilities */
+    .text-center{
+        text-align: center;
+    }
+    .text-primary {
+        color: #93cb52;
+    }
+    .text-lead{
+        font-size: 1.3rem;
+        margin-bottom: 2rem;
+    }
+
+
+/* Heading Sizes */
+    .l-heading{
+        font-size: 4rem;
+        margin-bottom: .75rem;
+        line-height: 1.1;
+    }
+    .m-heading{
+        font-size: 2rem;
+        margin-bottom: .75rem;
+        line-height: 1.1;
+
+    }
+
+/* Spacing Utilities */
+    /* Padding */
+        /* .pad-y-$ */
+            .pad-y-1 {  padding: 1.25rem 0;}
+            .pad-y-2 {  padding: 2rem 0;}
+            .pad-y-3 {  padding: 2.75rem 0;}
+            .pad-y-4 {  padding: 4.0rem 0;}
+            .pad-y-5 {  padding: 5.25rem 0;}
+        /* pad-x-# */
+            .pad-x-1{   padding: 0 1.25rem;}
+            .pad-x-2{   padding: 0 2.0rem;}
+            .pad-x-3{   padding: 0 2.75rem;}
+            .pad-x-4{   padding: 0 4.0rem;}
+            .pad-x-5{   padding: 0 5.25rem;}
+        /* pad-# */
+            .pad-1{     padding: 1.25rem;}
+            .pad-2{     padding: 2.0rem;}
+            .pad-3{     padding: 2.75rem;}
+            .pad-4{     padding: 4.0rem;}
+            .pad-5{     padding: 5.25rem;}
+
+/* List Utilities */
+    .list{
+        margin: 0.5rem 0;
+        list-style: none;
+    }
+    .list li{
+        padding: .5;
+    }

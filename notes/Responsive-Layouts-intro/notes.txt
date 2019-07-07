@@ -10,18 +10,40 @@ Tablet Common Breakpoint:
 @media(min-width: 501px) and (max-width: 768px){
 @media(min-width: 768px) and (max-width: 1200px){
 @media(min-width: 1201px){
-
+Multiple Queries for the same rule: 
+    @media(max-height: 450px), (max-width: 740px){
 
 ______________________________________________________
 em
     relative to font size of the parent container
+    trouble: 
+        nested elements, 
+        padding is odd 
+            font-size: 1.5em
+            padding: 1em; /*same as the calculated value from above*/
 rem
     relative to the root html element
-
+        default: 16px
+        62.5% is 10px 
+            rem of 1.5 = 15px;
+        adaptive to the browser's size input
 - - - - - -
+______________________________________________________
+viewportHeight & ViewportWidth
 
+100 viewport units
+    width & height
 
+______________________________________________________
+Hotel Website made Responsive: 
+    <link rel="stylesheet" 
+        href="css/mobile.css" 
+        media="screen and (max-width: 768px)"    
+    />
 
+    Most Common Job: 
+        remove floats
+        width: 100%;
 
 
 

@@ -1,0 +1,149 @@
+
+
+
+/*mobile.css, media="screen and (max-width: 768px){*/
+
+/* #navbar (main) Mobile Styling */
+/* #navbar (main) Mobile Styling */
+/* #navbar (main) Mobile Styling */
+
+    #navbar .logo {
+        float: none;
+        text-align: center;
+        padding-top: 2px;
+        padding-bottom: 6px;
+    }
+
+    #navbar ul, #navbar ul li {
+        float: none;
+        text-align: center;
+    }
+
+/* update padding to save space on the 'a' tag */
+    #navbar ul li a{
+        padding: 5px;
+        border-bottom: #444 dotted 1px;
+    }
+
+
+/* box utility for mobile*/
+/* box utility for mobile */
+    .box{
+        float: none;
+        width: 100%;
+    }
+
+/* Showcase Styling for Mobile */
+/* Showcase Styling for Mobile */
+/* Showcase Styling for Mobile */
+
+    /* Showcase */
+        /* #showcase{
+
+        } */
+        #showcase .showcase-content {
+            padding-top: 30px;
+        }
+        #showcase .container{
+            /* height: 100%; */
+        }
+
+/* Index Page Mobile Styling */
+    /* Home Info */
+        #home-info .info-img{
+            display: none;
+        }
+
+        #home-info .info-content{
+            float: none;
+            width: 100%;
+        }
+
+
+
+
+
+/* About Page Mobile Styling */
+/* About Page Mobile Styling */
+/* About Page Mobile Styling */
+        /* about-info */
+            #about-info .info-right, 
+            #about-info .info-left{
+                float:none;
+                width: 100%;
+            }
+            #about-info .info-right{
+                margin-top: 30px;
+            }
+
+            .l-heading{
+                text-align: center;
+            }
+
+        /* Testimonials */
+            #testimonials{
+                padding-top: 20px;
+            }
+            #testimonials::after{
+                clear:both;
+            }
+            #testimonials .testimonial p{
+                width: 100%;
+            }
+            #testimonials .testimonial img{
+                float: none;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            /* #main-footer {
+                clear: both;
+            } */
+
+/*Contact Page Mobile Adjustments  */
+/*Contact Page Mobile Adjustments  */
+/*Contact Page Mobile Adjustments  */
+
+        /* Contact Info Section */
+            #contact-info .box{
+                border-bottom: #444 dotted 1px;
+                padding-bottom: 10px;
+                padding-top: 10px;
+                /* text-align: center; */
+            }
+            #contact-info .box p{
+                display: block;
+                width: 100%;
+                text-align: center;
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

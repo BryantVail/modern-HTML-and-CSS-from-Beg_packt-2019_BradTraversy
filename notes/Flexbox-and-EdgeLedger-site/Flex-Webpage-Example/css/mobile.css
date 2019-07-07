@@ -1,0 +1,109 @@
+/* mobile.css */
+
+    /* What We Do */
+        #what .container .items {
+            display: block;
+            padding: 1rem;
+        }
+        /* Align Icons to the Left */
+        #what .items .item{
+            display: flex;
+            text-align: left;
+        }
+
+        /* position icon */
+            #what .container .items .item i{
+                margin-right: 1.3rem;
+                align-self: center;
+                margin-bottom: 0;
+            }
+
+
+@media(max-width: 500px){
+    #navbar {
+        /* display */
+            flex-direction: column;
+            align-items: center;
+    }
+    #navbar .logo{
+        margin-bottom: .5rem;
+        text-align: center;
+    }
+    #navbar ul{
+        padding: .5rem;
+    }
+
+    /* showcase, overlay top adjustment */
+        #showcase .showcase-content{
+            top: 110px;
+            /* suck the content up toward the top (or negative margin value) */
+            margin-top: -2.5rem;
+        }
+
+
+    /* Who Section */
+        /* Change to block */
+            #who{
+                display: block;
+            }
+        /* Remove image */
+            #who .who-img{
+                display: none;
+            }
+        
+    /* Clients */
+            /* change size of icon within container */
+                #clients .items img{
+                    width: 80%;
+                }
+            /* display 1 less */
+                #clients .items div:last-child{
+                    display: none;
+                }
+            
+    /* Contact & map */
+                /* stack map & contact form */
+                    #contact{
+                        flex-direction: column;
+                    }
+                    #contact .container {
+                        display: block;
+                        height: 300px;
+                        width: 100%;
+                        border-top: 4px solid #333;
+                        /* spacing */
+                            padding: 0;
+                            margin: 0;
+                        
+                    }
+                    #contact .container .map{
+                        display: block;
+                        height: 100%;
+                        width: 100%;
+                        
+                    }
+
+
+}
+@media(max-height: 667px){
+    #showcase .showcase-content .l-heading{
+        font-size: 3rem;
+    }
+    #showcase .showcase-content .text-lead{
+        font-size: 1.25rem;
+    }
+}
+@media(max-width: 812px){
+    #showcase .showcase-content {
+        top: 151px;
+    }
+}
+
+/* iPhone 6/7/8 */
+@media(max-width: 375px){
+    /* move up the .l-heading */
+        #showcase .showcase-content .l-heading {
+            margin-top: -4.25rem;
+        }
+}
+
