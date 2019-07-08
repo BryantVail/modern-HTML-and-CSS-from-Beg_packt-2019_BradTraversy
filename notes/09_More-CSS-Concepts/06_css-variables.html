@@ -1,0 +1,56 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Css Variables</title>
+    <style>
+        :root{
+            --max-width: 1100px;
+            --light-color: #f4f4f4;
+            --primary-color: steelBlue;
+            --secondary-color: skyBlue;
+            --light-color: #f4f4f4;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.4;
+            --light-color: #f4f4f4;
+            background: var(--light-color);
+        }
+        header{
+            background-color: var(--primary-color);
+            border-bottom: 5px var(--secondary-color) solid;
+            color: #fff;
+            text-align: center;
+        }
+        .container{
+            display: flex;
+            margin: auto;
+            max-width: var(--max-width);
+        }
+        .box{
+            padding: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Css Variables</h1>
+    </header>
+    <div class="container">
+        <div class="box box-1">
+            <h3>heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi voluptatibus illum, numquam perferendis nemo minima harum aperiam eveniet eos accusamus.</p>
+        </div>
+        <div class="box box-2">
+            <h3>heading</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam rem, minima nisi deleniti, laboriosam velit eum natus, inventore aliquid nam id.</p>
+        </div>
+    </div>
+</body>
+</html>

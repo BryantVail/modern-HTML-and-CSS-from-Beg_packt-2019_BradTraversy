@@ -35,7 +35,7 @@
 
     /* showcase, overlay top adjustment */
         #showcase .showcase-content{
-            top: 110px;
+            top: 151px;
             /* suck the content up toward the top (or negative margin value) */
             margin-top: -2.5rem;
         }
@@ -94,9 +94,9 @@
     }
 }
 @media(max-width: 812px){
-    #showcase .showcase-content {
+    /* #showcase .showcase-content {
         top: 151px;
-    }
+    } */
 }
 
 /* iPhone 6/7/8 */

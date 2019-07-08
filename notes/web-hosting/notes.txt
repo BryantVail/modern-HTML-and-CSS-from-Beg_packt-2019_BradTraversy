@@ -1,4 +1,6 @@
-Web Hosting
+__________________________________________________
+Video1
+Web Hosting Types
     -Shared Server
         cheapest usually
         -usually cannot login as 'root' or SSH
@@ -29,3 +31,39 @@ Web Hosting
             HostGator, 
             BlueHost
         ]
+    -Cloud Hosting: 
+        -multiple servers working together
+        -scalable 
+        lennox terminal commands, 
+        firewalls,
+        IngenX
+        examples: [
+            Digital Ocean,
+            Linode,
+            Vultr
+        ]
+    -Static Hosting: 
+        static sites via Git
+        free but pay for extra features
+        examples: [
+            Netlify, 
+            Github Pages
+        ]
+__________________________________________________
+video2, Hosting the website 
+    Inmotion hosting 
+
+    Domain Name Hosting: 
+        nameServers need updating with one's own Domain
+        nameCheap.com
+
+openCart 
+
+__________________________________________________
+FTP: 
+    static Websites 
+
+
+__________________________________________________
+
+
