@@ -1,0 +1,50 @@
+/* 09_style.css */
+
+body{
+    background: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.box{
+    background: white;
+    width: 100px;
+    height: 100px;
+    /* transition */
+        /* transition-property: background;
+        transition-duration: 2s;
+        /* transition-delay: .5s; */
+        /* transition-timing-function: ease-in-out; */ 
+        transition: background, border-radius 2s ease-in-out;
+
+}
+.box:hover{
+    background: red;
+    border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

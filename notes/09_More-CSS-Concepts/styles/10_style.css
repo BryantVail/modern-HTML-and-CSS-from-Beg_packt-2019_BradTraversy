@@ -1,0 +1,28 @@
+/* 10_style.css */
+
+
+body{
+    background: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.box{
+    background: white;
+    width: 300px;
+    height: 300px;
+    /* transform */
+        /* transform: rotate(25deg); */
+        /* transform: skew(25deg); */
+        /* transform: scale(2); */
+    transition: all 1s ease-in-out;
+
+}
+.box:hover{
+    transform: rotate(180deg);
+    /* transform: scale(2); */
+    transform: translateY(-100px);
+    transform: translate(100px, 100px);
+}

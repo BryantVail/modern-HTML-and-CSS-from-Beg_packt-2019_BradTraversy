@@ -1,0 +1,39 @@
+/* 07_style.css */
+
+
+body{
+    background:#333;
+
+}
+
+.box{
+    background: white;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    /* animation */
+        animation-name: animate1;
+        animation-duration: 2s;
+        animation-iteration-count: 1;
+        /* keep animation at destination */
+        animation-fill-mode: forwards;
+        animation-delay: .5s;
+        animation-direction: alternate;
+        animation-timing-function: ease-out;
+}
+
+@keyframes animate1{
+    /* simplest */
+        /* from{
+            width: 200px;
+        } */
+        from{
+            top: 0;
+        }
+        to{
+            /* width: 100%; */
+            width: 600px;
+            background-color: red;
+            top: 300px;
+        }
+}
