@@ -4,45 +4,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Css Variables</title>
-    <style>
-        :root{
-            --max-width: 1100px;
-            --light-color: #f4f4f4;
-            --primary-color: steelBlue;
-            --secondary-color: skyBlue;
-            --light-color: #f4f4f4;
-        }
-        *{
-            margin: 0;
-            padding: 0;
-        }
-        body{
-            font-family: Arial, Helvetica, sans-serif;
-            line-height: 1.4;
-            --light-color: #f4f4f4;
-            background: var(--light-color);
-        }
-        header{
-            background-color: var(--primary-color);
-            border-bottom: 5px var(--secondary-color) solid;
-            color: #fff;
-            text-align: center;
-        }
-        .container{
-            display: flex;
-            margin: auto;
-            max-width: var(--max-width);
-        }
-        .box{
-            padding: 1.5rem;
-        }
-    </style>
+    <link rel="stylesheet" href="styles/06_style-main.css">
+    <link rel="stylesheet" href="styles/06_utilities.css">
+
+    <!--Script Requests-->
+        <script 
+            src="https://kit.fontawesome.com/47fa47b17b.js">
+        </script>
+
 </head>
 <body>
     <header>
         <h1>Css Variables</h1>
     </header>
-    <div class="container">
+    <!-- <div class="container">
         <div class="box box-1">
             <h3>heading</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi voluptatibus illum, numquam perferendis nemo minima harum aperiam eveniet eos accusamus.</p>
@@ -51,6 +26,147 @@
             <h3>heading</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam rem, minima nisi deleniti, laboriosam velit eum natus, inventore aliquid nam id.</p>
         </div>
-    </div>
+    </div> -->
+    <section class="main-viewport"> <!--Includes nav-->
+        <nav class="side-nav bradius-2">
+            <ul>
+                <li>Hello</li>
+                <li>My </li>
+                <li>Name</li>
+                <li>Is</li>
+                <li>Nav</li>
+            </ul>
+        </nav>
+        <section id="main" class="bradius-2">
+            <div class="flex-row-container">
+
+                <!-- section follow-ups -->
+                <section class="box follow-ups bradius-2">
+                    <div class="heading-row">
+                        <h3 class="m-heading">Follow-Ups</h3>
+                        <a href="#" id="ToDo" class="btn btn-dark" >ToDo </a>
+                        <a href="#" id="Reviewed" class="btn btn-dark" >Reviewed</a>
+                        
+                    </div>
+                    <ul>
+                        <li>
+                            <span id="ApptDate" class="follow-up-list-item"></span>
+                        </li>
+                        <li>
+                            <span id="" class="follow-up-list-item"></span>
+                        </li>
+                        <li>
+                            <span id="" class="follow-up-list-item"></span>
+                        </li>
+                        <li>
+                            <span id="" class="follow-up-list-item"></span>
+                        </li>
+                        <li>
+                            <span id="" class="follow-up-list-item"></span>
+                        </li>
+                        <li>
+                            <span id="" class="follow-up-list-item"></span>
+                        </li>
+                        <li>
+                            <span id="" class="follow-up-list-item"></span>
+                        </li>
+                        <li>
+                            <span id="" class="follow-up-list-item"></span>
+                        </li>
+                        
+                    </ul>
+                </section>
+    
+                <!-- appointment Schedule -->
+                <div class="schedule bradius-2">
+                    <div class="heading-row">
+                        <h1 class="">Schedule Summary</h1>
+                        <!-- calendar icons for radio buttons -->
+                        
+                            <i class="
+                                fas 
+                                fa-calendar-day 
+                                fa-2x 
+                                icon-circle icon-primary">
+                            </i>
+                            <i class="
+                                fas 
+                                fa-calendar-week 
+                                fa-2x 
+                                icon-circle icon-primary">
+                            </i>
+                            <i class="
+                                fas 
+                                fa-calendar-alt 
+                                fa-2x 
+                                icon-circle icon-primary">
+                            </i>
+                        
+                    </div><!--heading-row end-->
+
+                    <div class="container-appointment-slots">
+                            <div class="appointment-slot">
+                                <i class="fas fa-user-nurse icon-circle icon-primary fa-1x"></i>
+                            </div>
+                            <div class="appointment-slot">
+                                <i class="fas fa-user-nurse icon-circle icon-primary fa-1x"></i>
+                            </div>
+                            <div class="appointment-slot">
+                                <i class="fas fa-user-nurse icon-circle icon-primary fa-1x"></i>
+                            </div>
+                            <div class="appointment-slot">
+                                <i class="fas fa-stethoscope icon-circle icon-primary fa-1x"></i>
+                            </div>
+                            <div class="appointment-slot">
+                                <i class="fas fa-stethoscope icon-circle icon-primary fa-1x"></i>
+                            </div>
+                            <div class="appointment-slot">
+                                <i class="fas fa-stethoscope icon-circle icon-primary fa-1x"></i>
+                            </div>
+                            <div class="appointment-slot">
+                                <i class="fas fa-stethoscope icon-circle icon-primary fa-1x"></i>
+                            </div>
+                            <div class="appointment-slot">
+                                    <i class="fas fa-user-nurse icon-circle icon-primary fa-1x"></i>
+                            </div>
+                            <div class="appointment-slot">
+                                    <i class="fas fa-user-nurse icon-circle icon-primary fa-1x"></i>
+                            </div>
+                            <div class="appointment-slot">
+                                    <i class="fas fa-user-nurse icon-circle icon-primary fa-1x"></i>
+                            </div>
+                            <div class="appointment-slot">
+                                    <i class="fas fa-user-nurse icon-circle icon-primary fa-1x"></i>
+                            </div>
+                            <div class="appointment-slot">
+                                    <i class="fas fa-user-nurse icon-circle icon-primary fa-1x"></i>
+                            </div>
+                            <div class="appointment-slot">
+                                    <i class="fas fa-user-nurse icon-circle icon-primary fa-1x"></i>
+                            </div>
+                            
+                    </div>
+                </div>
+            </div>
+            
+            <!-- survey section -->
+            <!-- <section class="survey bradius-2">
+                    <iframe 
+                        width="640px" 
+                        height= "480px" 
+                        src= "https://forms.office.com/Pages/ResponsePage.aspx?id=z1cSkszvSUONV91PcqTcF5lSEK8usY9LmZp-OqBsnVFURTVHVlY5TTlWV05RM0pGMTcyMVJLRklKQi4u&embed=true" 
+                        frameborder= "0" 
+                        marginwidth= "0" 
+                        marginheight= "0" 
+                        style= "max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> 
+                    </iframe>
+            </section> -->
+        </section>
+        
+    </section>
+    <!-- footer -->
+    <footer class="main-footer">
+            
+    </footer>
 </body>
 </html>

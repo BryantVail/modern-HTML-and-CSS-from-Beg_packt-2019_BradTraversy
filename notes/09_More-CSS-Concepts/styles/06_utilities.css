@@ -1,0 +1,63 @@
+/* 06_utilities.css */
+
+.bradius-1{
+    border-radius: 3px;    
+}
+.bradius-2{
+    border-radius: 6px;
+}
+.bradius-3{
+    border-radius: 10px
+}
+.bradius-round{
+    border-radius: 50%;
+}
+
+.btn{
+    padding: .5rem;
+    border-radius: 25%;
+    display: inline-block;
+}
+.btn-primary{
+    background: var(--dark-color);
+    color: var(--light-color);
+}
+.btn-dark{
+    background: var(--dark-color);
+    color: var(--light-color);
+}
+.btn-dark:hover{
+    background: var(--dark-med-color);
+    color: var(--light-color);
+}
+
+/* icons */
+    .icon-circle {
+        padding: .8rem;
+        border-radius: 50%;
+    }
+    .icon-primary{
+        background: var(--primary-color);
+        color: var(--light-color);
+    }
+    .icon-primary:hover{
+        background: skyblue;
+        color: var(--light-color);
+    }
+    
+    .heading-row{
+        margin-bottom: .5rem;
+    }
+.heading-row h1,
+.heading-row h2,
+.heading-row h3{
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+
+.main-footer{
+    /* height: 300px; */
+    /* width: 100%; */
+    background: var(--dark-color);
+}
