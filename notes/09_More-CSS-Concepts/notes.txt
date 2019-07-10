@@ -1,0 +1,110 @@
+06_Variables in CSS
+
+Where: 
+    :root
+        a scope has been defined, 
+            can be used anywhere in the stylesheet
+        uses: 
+            primary: 
+                desc: navy
+                rgb: 0, 64, 127;
+                hsl (Hue, Saturation, Luminance): 
+                    140, 240, 60;
+                
+            secondary: 
+                desc: "yellow/Gold";
+                hsl: 29, 240, 158;
+                rgb: 255, 209, 81;
+            gray: 
+                light: 
+                dark: 
+        
+
+
+_____________________________________________________
+07_Keyframe animation
+
+mid-points, 
+    width: 200 - 600 pixels, 
+        grow or shrink, 
+        positions, 
+        opacity, 
+    
+    animation: {nameOfAnimation} {Duration} {fill-mode} {delay} {timing-function}
+
+.box{
+    background: white;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    /* animation */
+        animation-name: animate1;
+        animation-duration: 2s;
+        animation-iteration-count: 1;
+        /* keep animation at destination */
+        animation-fill-mode: forwards;
+        animation-delay: .5s;
+        animation-direction: alternate;
+        animation-timing-function: ease-out;
+}
+
+_____________________________________________________
+08_animations2
+
+
+.box{
+    background: white;
+    width: 200px;
+    height: 200px;
+    /* position */
+        position: relative;
+        top: 0;
+        left: 0;
+    /* animation */
+        /*define the animation parameters*/
+        animation: animate1 5s forwards .5s ease-in-out;
+}
+
+@keyframes animate1{
+    25%{
+        top: 0;
+        left: 300px;
+        background: red;
+    }
+    50%{
+        /* move-down */
+        top: 300px;
+        /*  */
+        left: 300px;
+        background: green;
+    }
+    75%{
+        /* x-axis pos remains */
+        top: 300px;
+        /* bring to left edge */
+        left: 0;
+        background: blue;
+    }
+    100%{
+        top: 0;
+        left: 0;
+        background: white;
+    }
+
+
+----------------------------------------------------
+CSS Transitions: 
+
+
+transition: background, border-radius 2s ease-in-out;
+
+.box:hover{
+    background: red;
+    border-radius: 50%;
+}
+
+_____________________________________________________
+10_transform-property
+
+
+
