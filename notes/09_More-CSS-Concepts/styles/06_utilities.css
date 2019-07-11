@@ -13,6 +13,21 @@
     border-radius: 50%;
 }
 
+.box{
+    /* flex */
+        flex: 1;
+    /* spacing */
+        padding: 1.5rem;
+        margin-right: 1rem;
+        /* margin-left: 1rem; */
+    background: var(--primary-color);
+    color: var(--light-color);
+    border-bottom: 3px var(--secondary-color) solid;
+    border-radius: 3px;
+    /* size */
+        min-height: 18rem;
+}
+
 .btn{
     padding: .5rem;
     border-radius: 25%;
@@ -32,8 +47,12 @@
 }
 
 /* icons */
-    .icon-circle {
+    .icon-circle-l {
         padding: .8rem;
+        border-radius: 50%;
+    }
+    .icon-circle-m {
+        padding: .3rem;
         border-radius: 50%;
     }
     .icon-primary{
@@ -57,7 +76,12 @@
 
 
 .main-footer{
-    /* height: 300px; */
+    height: 100%;
     /* width: 100%; */
     background: var(--dark-color);
+    color: var(--light-color);
+    text-align: center;
+    /* spacing */
+        padding: 2rem;
+        margin: 0;
 }
