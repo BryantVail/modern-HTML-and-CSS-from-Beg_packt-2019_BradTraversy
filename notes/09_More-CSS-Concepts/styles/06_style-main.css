@@ -36,13 +36,16 @@ header{
 }
 
 nav.side-nav{
-    /* 1/6 of the width */
+     /*display  */
+        /* 1/6 of the width */
         flex: 1;
+        align-self: stretch;
     background: var(--dark-color);
     /* spacing */
         margin-right: 1rem;
         margin-left: .5rem;
-    height: 100%;
+        margin-top: 1rem;
+        
     width: 100%;
     padding: .8rem;
     
@@ -54,7 +57,10 @@ nav.side-nav li{
 .main-viewport{
     /* display */
         display: flex;
-    margin-top: 1rem;
+        align-items: stretch;
+    /* spacing */
+        
+        padding-bottom: 1rem;
     /* max-width: var(--max-width); */
         
 }
@@ -82,15 +88,7 @@ nav.side-nav li{
         margin-bottom: 1rem;
     max-width: var(--max-width);
 }
-.flex-row-container{
-    flex-direction: row;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 1rem;
-    max-height: 300px;
-    min-width: 100%;
-    
-}
+
 
 .follow-ups{
     
