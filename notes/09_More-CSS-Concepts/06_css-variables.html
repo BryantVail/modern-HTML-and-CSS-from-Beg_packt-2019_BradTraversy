@@ -4,7 +4,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Css Variables</title>
-<<<<<<< HEAD
     <link rel="stylesheet" href="styles/06_style-main.css">
     <link rel="stylesheet" href="styles/06_utilities.css">
 
@@ -13,20 +12,10 @@
             src="https://kit.fontawesome.com/47fa47b17b.js">
         </script>
 
-=======
-    <!-- styles -->
-        <!-- master style -->
-            <link rel="stylesheet" href="styles/06_style.css">
-        <!-- page style -->
-    <style>
-        
-       
-    </style>
->>>>>>> 7c883a6fa2ea433b993db46bcbdd4647be2e5592
 </head>
 <body>
     <header>
-        <h1>Css Variables</h1>
+        <h1>Care Lynx</h1>
     </header>
     <!-- <div class="container">
         <div class="box box-1">
@@ -41,14 +30,27 @@
     <section class="main-viewport"> <!--Includes nav-->
         <nav class="side-nav bradius-2">
             <ul>
-                <li>Hello</li>
-                <li>My </li>
-                <li>Name</li>
-                <li>Is</li>
-                <li>Nav</li>
+                <li>
+                    Patients 
+                    <input 
+                        type="text" 
+                        class="search"
+                        placeholder="Patient Info"
+                    >
+                </li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
             </ul>
         </nav>
         <section id="main" class="bradius-2">
+            <div class="summary-popout">
+                <!-- this section should 'transform' open to show a summary view of: 
+                    patient searches,
+                    appointments,
+                      -->
+            </div>
             <div class="flex-row-container">
 
                 <!-- section follow-ups -->
@@ -98,66 +100,86 @@
                                 fas 
                                 fa-calendar-day 
                                 fa-2x 
-                                icon-circle icon-primary">
+                                icon-circle-l icon-primary">
                             </i>
                             <i class="
                                 fas 
                                 fa-calendar-week 
                                 fa-2x 
-                                icon-circle icon-primary">
+                                icon-circle-l icon-primary">
                             </i>
                             <i class="
                                 fas 
                                 fa-calendar-alt 
                                 fa-2x 
-                                icon-circle icon-primary">
+                                icon-circle-l icon-primary">
                             </i>
                         
                     </div><!--heading-row end-->
 
                     <div class="container-appointment-slots">
                             <div class="appointment-slot">
-                                <i class="fas fa-user-nurse icon-circle icon-primary fa-1x"></i>
+                                <i class="fas fa-user-nurse icon-circle-m icon-primary fa-1x"></i>
                             </div>
                             <div class="appointment-slot">
-                                <i class="fas fa-user-nurse icon-circle icon-primary fa-1x"></i>
+                                <i class="fas fa-user-nurse icon-circle-m icon-primary fa-1x"></i>
                             </div>
                             <div class="appointment-slot">
-                                <i class="fas fa-user-nurse icon-circle icon-primary fa-1x"></i>
+                                <i class="fas fa-user-nurse icon-circle-m icon-primary fa-1x"></i>
                             </div>
                             <div class="appointment-slot">
-                                <i class="fas fa-stethoscope icon-circle icon-primary fa-1x"></i>
+                                <i class="fas fa-stethoscope icon-circle-m icon-primary fa-1x"></i>
                             </div>
                             <div class="appointment-slot">
-                                <i class="fas fa-stethoscope icon-circle icon-primary fa-1x"></i>
+                                <i class="fas fa-stethoscope icon-circle-m icon-primary fa-1x"></i>
                             </div>
                             <div class="appointment-slot">
-                                <i class="fas fa-stethoscope icon-circle icon-primary fa-1x"></i>
+                                <i class="fas fa-stethoscope icon-circle-m icon-primary fa-1x"></i>
                             </div>
                             <div class="appointment-slot">
-                                <i class="fas fa-stethoscope icon-circle icon-primary fa-1x"></i>
+                                <i class="fas fa-stethoscope icon-circle-m icon-primary fa-1x"></i>
                             </div>
                             <div class="appointment-slot">
-                                    <i class="fas fa-user-nurse icon-circle icon-primary fa-1x"></i>
+                                    <i class="fas fa-user-nurse icon-circle-m icon-primary fa-1x"></i>
                             </div>
                             <div class="appointment-slot">
-                                    <i class="fas fa-user-nurse icon-circle icon-primary fa-1x"></i>
+                                    <i class="fas fa-user-nurse icon-circle-m icon-primary fa-1x"></i>
                             </div>
                             <div class="appointment-slot">
-                                    <i class="fas fa-user-nurse icon-circle icon-primary fa-1x"></i>
+                                    <i class="fas fa-user-nurse icon-circle-m icon-primary fa-1x"></i>
                             </div>
                             <div class="appointment-slot">
-                                    <i class="fas fa-user-nurse icon-circle icon-primary fa-1x"></i>
+                                    <i class="fas fa-user-nurse icon-circle-m icon-primary fa-1x"></i>
                             </div>
                             <div class="appointment-slot">
-                                    <i class="fas fa-user-nurse icon-circle icon-primary fa-1x"></i>
+                                    <i class="fas fa-user-nurse icon-circle-m icon-primary fa-1x"></i>
                             </div>
                             <div class="appointment-slot">
-                                    <i class="fas fa-user-nurse icon-circle icon-primary fa-1x"></i>
+                                    <i class="fas fa-user-nurse icon-circle-m icon-primary fa-1x"></i>
                             </div>
                             
                     </div>
                 </div>
+            </div>
+            <div class="flex-row-container">
+                <section class="box">
+                    
+                </section>
+                <section class="box">
+
+                </section>
+                <section class="box">
+
+                </section>
+            </div>
+            <div class="flex-row-container">
+                <section class="unlocked-charts box">
+                    
+                </section>
+                <section class="unlocked-charts box">
+
+                </section>
+                
             </div>
             
             <!-- survey section -->
@@ -177,7 +199,9 @@
     </section>
     <!-- footer -->
     <footer class="main-footer">
-            
+            <p>Copyright 2019 &copy; 
+                <span class="text-primary">WeCare tlc</span>
+            </p>
     </footer>
 </body>
 </html>
