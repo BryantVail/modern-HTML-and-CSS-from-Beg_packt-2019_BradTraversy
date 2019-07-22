@@ -1,0 +1,31 @@
+"10_mini-projects-keyframes-transitions"
+
+@keyframes slidein{
+    from{
+        margin-left: 100%;
+        width: 300%;
+    }
+    to{
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+//animation: 
+    -shorthand
+        [
+            animation-name, 
+            animation-duration, 
+            animation-timing-function, 
+            animation-delay,
+            animation-iteration-count, 
+            animation-direction,
+            animation-fill-mode,
+            animation-play-state
+        ]
+
+
+    //one point to another, 
+        using keyframes, 
+    transform: 
+    translate-x: 
+    translate-y: 

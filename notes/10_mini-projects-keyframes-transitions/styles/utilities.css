@@ -1,0 +1,74 @@
+
+
+
+
+
+/* Buttons */
+    .btn{
+        display: inline;
+        padding: 1rem 2rem;
+        background: var(--light-color);
+        color: var(--dark-color);
+
+        border-radius: 3px;
+        border: none;
+        /* transition */
+            transition: all .3s ease-in;
+    }
+
+    /* in a section, two adjacent btn's */
+    section.page a.btn + a.btn{
+        margin-left: 1rem;
+        
+    }
+        /* hover */
+        .btn:hover{
+            background: var(--dark-color);
+            color: var(--light-color);
+        }
+
+    .btn-dark{
+        color: var(--light-color);
+        background: var(--dark-color);
+    }
+        /* hover */
+        .btn-dark:hover{
+            background: var(--light-color);
+            color: var(--dark-color);
+        }
+
+
+
+/* presentation */
+    /* full page */
+    .page{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        /* align along cross-axis */
+        align-items: center;
+        /* align along main-access */
+        justify-content: center;
+        text-align: center;
+        padding: 0, 4rem, 0, 4rem;
+    }
+
+    .page h1{
+        font-size: 4rem;
+        line-height: 1.2;
+        padding: 4rem;
+    }
+
+    .page p{
+        font-size: 1.3rem;
+        padding: 2rem;
+    }
+
+
+
+
+
+
+
+
+

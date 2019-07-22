@@ -1,0 +1,45 @@
+/* style.css */
+
+
+body{
+    
+    color: #f4f4f4;
+    overflow: hidden; 
+   
+}
+
+#page-1{
+    background: var(--page-1-color);
+}
+
+#page-2{
+    background: var(--page-2-color);
+}
+
+#page-3{
+    background: var(--page-3-color);
+}
+
+#page-4{
+    background: var(--page-4-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
