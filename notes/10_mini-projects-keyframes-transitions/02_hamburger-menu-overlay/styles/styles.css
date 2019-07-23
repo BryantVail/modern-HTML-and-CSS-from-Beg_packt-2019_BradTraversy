@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+:root{
+    --primary-color-opaque: rgba(13, 110, 139, .75);
+    --primary-color: rgba(13, 110, 139, 1);
+    --secondary-color: rgba(229, 148, 0, .9);
+    --overlay-color: rgba(24, 39, 51, .85);
+
+    --menu-animation-duration: .75s;
+}
+body{
+    font-family: "Roboto", sans-serif;
+    line-height: 1.4;
+    
+}
+
+a{
+    text-decoration: none;
+}
+
+.btn{
+    display: inline-block;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 4px;
+    background: var(--primary-color);
+    color: #f4f4f4;
+    margin-top: 1rem;
+    /* transition */
+        transition: all 1s ease-in-out;
+}
+    .btn:hover{
+        cursor: pointer;
+        opacity: .7;
+    }
+.container {
+    max-width: 960px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 3rem;
+}
+
+#showcase{
+    background: var(--primary-color-opaque);
+    color: #f4f4f4;
+    height: 100vh;
+    position: relative;
+}
+
+#showcase .showcase-container{
+    display: flex; 
+    flex-direction: column; 
+    /* cross-axis */
+    align-items: center;
+    /* main-axis */
+    justify-content: center;
+    text-align: center;
+    /* 100% of container */
+    height: 100%;
+}
+
+#showcase h1{
+    font-size: 4.5rem;
+}
+
+#showcase p{
+    font-size: 1.4rem;
+}
+
+#showcase:before{
+    /* :before needs a 'content' value*/
+    content: '';
+    background: 
+        url("../content/showcase.jpg")
+        no-repeat
+        center center/cover;
+    /* position */
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        /* show behind */
+        z-index: -1;
+}
+
+
+
+
+
+
+
+
+

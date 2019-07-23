@@ -5,6 +5,9 @@
         margin-left: 100%;
         width: 300%;
     }
+    50%{
+        //insert action
+    }
     to{
         margin-left: 0%;
         width: 100%;

@@ -1,0 +1,412 @@
+table {
+    color: #00407F;
+    font-family: Calibri Light;
+    font-size: 11pt;
+    text-align: left;
+}
+body {
+    color: #00407F;
+    font-family: Calibri Light;
+    font-size: 11pt
+}
+
+input[type=button] {
+    border-radius: 10px 10px 10px 10px;
+    border-color: #00407F;
+    background-color: #FFD24F;
+    color: #00407F;
+    font-weight: bold;
+    padding: 2px 15px 2px 15px;
+}
+
+input[type=button]:hover {
+    border-radius: 10px 10px 10px 10px;
+    border-color: #FFD24F;
+    background-color: #00407F;
+    color: #FFD24F;
+    font-weight: bold;
+    padding: 2px 15px 2px 15px;
+}
+
+input[type=submit] {
+    border-radius: 10px 10px 10px 10px;
+    border-color: #00407F;
+    background-color: #FFD24F;
+    color: #00407F;
+    font-weight: bold;
+    padding: 2px 15px 2px 15px;
+}
+
+input[type=submit]:hover {
+    border-radius: 10px 10px 10px 10px;
+    border-color: #FFD24F;
+    background-color: #00407F;
+    color: #FFD24F;
+    font-weight: bold;
+    padding: 2px 15px 2px 15px;
+}
+
+a:link {
+    color: #00407F;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #00407F;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    color: black;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+a.Links:link {
+    color: #00407F;
+    font-weight: bold;
+    text-decoration: none;
+}
+a.Links:visited {
+    color: #00407F;
+    font-weight: bold;
+    text-decoration: none;
+}
+a.Links:hover {
+    color: black;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+a.Nav:link {
+    color: #00407F;
+    font-weight: bold;
+    text-decoration: none;
+}
+a.Nav:visited /* Navigation Visited */ {
+    color: #00407F;
+    font-weight: bold;
+    text-decoration: none;
+}
+a.Nav:active /* Navigation Active */ {
+    color: #00407F;
+    font-weight: bold;
+    text-decoration: none;
+}
+a.Navdisabled /* Navigation disabled */ {
+    color: #00407F;
+    font-weight:normal;
+    text-decoration: none;
+}
+a.Nav:hover /* Navigation Hover */ {
+    color: black;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+
+.HRAQuestion {
+    font-size: 10pt;
+    font-weight: Bold;
+    text-decoration: none;
+}
+
+.HRAAnswer {
+    color: black;
+    font-size: 10pt;
+    font-weight: normal;
+    text-decoration: none;
+    padding-left: 2pt;
+}
+.modalBackground
+{
+	background-color : gray;
+	filter : alpha(opacity=70);
+	opacity : 0.7;
+}
+.PopupContent /* Site Content */ {
+    background-color: #DDDDDD;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #00407F;
+    font-size: 0.8em;
+    font-weight: normal;
+    text-decoration: none;
+    border: solid 3px black;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.ProgressBackground 
+{
+   position:fixed;
+   top:0px;
+   bottom:0px;
+   left:0px;
+   right:0px;
+   background-color:Gray;
+   filter:alpha(opacity=40);
+   opacity:0.4;
+}
+.Progress {
+    width: 340px;
+    height: 75px;
+    text-align: center;
+    background-color: White;
+    border: solid 1px black;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -30px; /* make this half your image/element height */
+    margin-left: -90px; /* make this half your image/element width */
+    font-family: Calibri Light;
+    color: Gray;
+    font-size: 12pt;
+    font-weight: bold;
+}
+.TitleCell {
+    color: #00407F;
+    font-size: 16pt;
+    font-weight: normal;
+    text-decoration: none;
+}
+.TitleContentCell {
+    color: #00407F;
+    background-color:White;
+    font-size: 16pt;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+.SubTitleCell {
+    color: White;
+    font-size: 10pt;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: #00407F;
+    padding-left: 2pt;
+}
+
+.AlternatingRowStyle {
+    background-color: #DDDDDD;
+}
+
+.Links {
+    color: #00407F;
+    font-size: 10pt;
+    font-weight: 700;
+    text-decoration: none;
+    padding-left: 2pt;
+}
+.LinkCells
+{
+     padding-top:2pt;
+     padding-bottom:2pt;
+}
+
+.WaterMark
+{
+	color: gray;
+}
+.WaterMarkEncounter {
+    color: gray;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 10pt;
+}
+.TopBorder
+{
+	border-top: solid 2px black;
+}
+.Grid {
+    color: #000000;
+    font-size: 10pt;
+    font-weight: normal;
+    text-decoration: none;
+}
+.GridHeaderBlue {
+    background-image: url("Images/headerbg.gif");
+    color: #000000;
+    font-size: 8pt;
+    color: White;
+    font-weight: normal;
+    text-decoration: none;
+    padding-bottom: 4px;
+    padding-top: 4px;
+}
+.SmallGrid   
+{ 
+     color: #000000; 
+     font-size: 8pt; 
+     font-weight: normal; 
+     text-decoration: none;
+}
+.PrintGridFieldNames
+{ 
+     color: #3366cc; 
+     font-size: 8pt; 
+     font-weight: normal; 
+     text-decoration: none;
+	 vertical-align:top;
+}
+.PrintGridFieldValues
+{ 
+     color: #000000; 
+     font-size: 8pt; 
+     font-weight: normal; 
+     text-decoration: none;
+	 vertical-align:top;
+}
+.GridFieldNames
+{ 
+     color: #3366cc; 
+     font-size: 10pt; 
+     font-weight: normal; 
+     text-decoration: none;
+	 vertical-align:top;
+}
+.GridFieldValues
+{ 
+     color: #000000; 
+     font-size: 10pt; 
+     font-weight: normal; 
+     text-decoration: none;
+	 vertical-align:top;
+}
+.GridButtons
+{ 
+     color: #3366cc; 
+     font-size: 10pt; 
+     font-weight: normal; 
+     text-decoration: none;
+     border-color:Gray;
+     border-style:solid;
+     border-width:1px;
+}
+.pageHeader   
+{ 
+     color: #000000; 
+     font-size: 16pt; 
+     font-weight: normal; 
+     text-decoration: none;
+}
+.siteText   
+{ 
+     color: #000000; 
+     font-size: 0.8em; 
+     font-weight: normal; 
+     text-decoration: none;
+}
+.HighlightedText {
+    color: #00407F;
+    font-size: 12pt;
+    font-weight: Bold;
+    text-decoration: none;
+    vertical-align: top;
+}
+
+.LoginText {
+    font-family: Calibri Light;
+    color: #00407F;
+    font-size: large;
+    text-decoration: none;
+    vertical-align =top;
+}
+.FUControl
+{
+     border-top-color:Gray;
+     border-top-style:solid;
+     border-top-width:1px;
+}
+.FUControlLeft
+{
+	width:40%;
+	text-align:right;
+}
+.FUControlRight
+{
+	width:60%;
+	text-align:left;
+}
+.FUControlLeft20
+{
+	width:20%;
+	text-align:Left;
+}
+.FUControlRight80
+{
+	width:80%;
+	text-align:left;
+}
+
+.SectionHeader {
+    font-family: Calibri Light;
+    background-color: #00407F;
+    color: white;
+    font-size: 12pt;
+    font-weight: normal;
+    text-decoration: none;
+    padding-left: 2pt;
+    text-align: left;
+}
+
+.SectionHeaderCenter {
+    font-family: Calibri Light;
+    background-color: #00407F;
+    color: white;
+    font-size: 12pt;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+.SectionHeaderRight {
+    font-family: Calibri Light;
+    background-color: #00407F;
+    color: white;
+    font-size: 12pt;
+    font-weight: normal;
+    text-decoration: none;
+    padding-left: 2pt;
+    text-align: right;
+}
+
+.MinorSectionHeader {
+    font-family: Calibri Light;
+    background-color: #FFD24F;
+    color: #00407F;
+    font-size: 10pt;
+    font-weight: Bold;
+    text-decoration: none;
+    padding-left: 2pt;
+}
+
+.ProfileApptSection {
+    font-family: Calibri Light;
+    background-color: #00407F;
+    color: white;
+    font-size: 10pt;
+    font-weight: Bold;
+    text-decoration: none;
+    padding-left: 2pt;
+}
+
+.NoticeTextCell {
+    font-family: Calibri Light;
+    color: black;
+    font-size: 10pt;
+    vertical-align: top;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top: 1px dotted #C0C0C0;
+    border-bottom-width: 1px;
+}
+
+.NoticeLink {
+    font-family: Calibri Light;
+    color: #02396A;
+    font-size: 10pt;
+}
