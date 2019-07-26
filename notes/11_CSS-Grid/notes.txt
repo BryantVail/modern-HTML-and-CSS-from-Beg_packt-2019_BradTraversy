@@ -1,0 +1,38 @@
+Css Grid: {
+
+    notes: [
+        "great for laying out content like a news site",
+        "layout: main section & a sidebar", 
+        "/* auto will always try to fill the container */",
+        "'fr' unit, a fraction of the page basically",
+        
+    ],
+    cssTips: [
+        {
+            name: "repeating all the same width columns",
+            description: "
+                grid-template-column: repeat(1fr 1fr 1fr);
+            "
+        },
+        {
+            name: "grid children", 
+            description: "
+                .item:first-child {
+                    grid-column: 1 / span 3;
+                    grid-row: 1 / span 2;
+                }    
+            "
+        },
+        {
+            name: "move items out of the flow & maintain wrapping feature",
+            description: leave the markup as is & just style the items where they may be needed."
+        },
+        {
+            name: "auto-fit & minmax",
+            description: "
+                'grid-template-columns: repeat(auto-fit, minmax(300px, 1fr);'. auto-fit, then 300min, 1fr max 
+            "
+        }
+    ]
+
+}
