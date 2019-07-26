@@ -1,0 +1,165 @@
+"10_mini-projects-keyframes-transitions"
+PresentationWebsite: {
+
+    @keyframes slidein{
+        from{
+            margin-left: 100%;
+            width: 300%;
+        }
+        50%{
+            //insert action
+        }
+        to{
+            margin-left: 0%;
+            width: 100%;
+        }
+    }
+    //animation: 
+        -shorthand
+            [
+                animation-name, 
+                animation-duration, 
+                animation-timing-function, 
+                animation-delay,
+                animation-iteration-count, 
+                animation-direction,
+                animation-fill-mode,
+                animation-play-state
+            ]
+
+
+        //one point to another, 
+            using keyframes, 
+        transform: 
+        translate-x: 
+        translate-y: 
+},
+
+HamburgerMenu: {
+
+},
+
+TimeLineKnowledge: {
+    notes: [
+        "fa-chevron-right, used for good pointer in heading",
+        {
+            font shorthand: "font: normal 1rem/1.5 'arial', sans-serif;"
+        },
+        {
+            "transition-examples":
+            "
+                /* property name | duration | timing function | delay */
+                transition: margin-right 4s ease-in-out 1s;
+
+                /* Apply to 2 properties */
+                transition: margin-right 4s, color 1s;
+            "
+        },
+
+    ],
+    descriptionOfStructure: {
+        <header>
+            <div class="container">
+                <h1>
+                    <i class="fas fa-brain"></i>
+                    <!--below: text next to the icon-->
+                    Author Name 
+                </h1>
+            </div>
+        </header>
+        
+        <!--section.timeline -->
+        <section id="timeline>
+            <ul>
+                <li>
+                    <h1>
+                        <i class="fas fa-chevron-right"></i>
+                        Header Text
+                    </h1>
+                    <p>
+                        lorem15-35 
+                    </p>
+                </li>
+            </ul>
+        </section>
+    }
+    Css-Skills-New: [
+        {
+            name: "/* push content to the middle */",
+            description: "margin: 0 auto;"
+        },
+        {
+            name: "Static positioning", 
+            description: "the default that every element gets — it just means "put the element into its normal position in the document layout flow — nothing special to see here."
+        },
+        {
+            name: "relative positioning",
+            description: "inputs to move the element are in effect from the place that the element would fall in the normal layout of the page; inputs move the element from its static position"
+        },
+        {
+            name: "absolute positioning",
+            description: "No longer exists in the normal layout flow; the element is positioned and interacts on its own isolated layer- separate from the rest of the page flow. 
+
+            Inputs: position the element for how 'far away from the edge of the containing element' the selected element's side's should be; 'top: 1.875rem left: 1.875rem' moves the sides to the specified distance from the parent element's edge.
+            
+            read-more..."
+        },
+        {
+            name: "Positioning Contexts",
+            description: "https://developer.mozilla.org/en-US/docs/Web/CSS/Containing_block#Identifying_the_containing_block"
+        },
+        {
+            name: "css arrow on box/div 'trick'",
+            description: "
+                An 'Arrow' visual can be created with just CSS; 'border-width', 'border-color: trans {color} trans trans;', and 'left' positioning. In the tutorial the element to style was created with a ':before' sudo-selector- inserting the element before the previously specified element in the markup. 
+            ",
+            codeExample: "
+                #timeline ul li:nth-child(even) div:before{
+                    /*'left' is used to position 'arrow' just outside
+                    the border of the div/sibling element calling ':before'*/
+                    left: -.9375rem; /*-15px*/
+                    border-width: .5rem 1rem .5rem 0;
+                    border-color: 
+                        transparent
+                        var(--secondary-color)
+                        transparent
+                        transparent;
+                }
+            ",
+        },
+        {
+            name: "slide out hunch",
+            description: "
+                overflow-x: hidden;
+            "
+        },
+        {
+            name: "css calc function",
+            description: "
+                width: calc(100vw - 5.625rem); /*90px*/
+            "
+        },
+        {
+            name: "",
+            description: ""
+        },
+        {
+            name: "",
+            description: ""
+        },
+    ]
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
