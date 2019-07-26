@@ -8,3 +8,36 @@
                 "footer footer footer";
     .header {
     grid-area: header;/*declare the name of the grid area with the element*/
+
+__________________________________________
+News Grid Website, 
+
+favicons: 
+    dynamic drive favicon, 
+    tools.dynamicdrive.com/favicon 
+
+    if 'main-nav' is the 'grid' container, then 1 container as the grid item
+
+    Columns: 
+        When selecting the 'grid-template-columns' the action is allocatiing horizontal space based on virtical columns that take up lateral space. 
+
+    justify-self: 
+        within the container" "
+
+    "::before", 
+        :before psuedo selector is displayed as 'absolute' positioning, it is positioned in association with the first 'relative' container. 
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+

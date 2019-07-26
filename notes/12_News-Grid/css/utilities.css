@@ -1,0 +1,58 @@
+.btn{
+    display: inline-block;
+    background: var(--dark-color);
+    color: var(--light-color);
+    /* spacing */
+        padding: .5rem 1.5rem;
+    border: none;
+    border-radius: 15px;
+}
+    .btn:hover{
+        opacity: .9;
+
+    }
+.btn-light{
+    background: var(--light-color);
+
+}
+.btn-primary{
+    background: var(--primary-color);
+
+}
+.btn-secondary{
+    background: var(--secondary-color);
+}
+
+.btn-block{
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+/* card */
+/* card */
+/* card */
+    .card{
+        background: #fff;
+        padding: 1rem;
+    }
+
+.category{
+    display: inline-block;
+    color: white;
+    font-size: .55rem;
+    text-transform: uppercase;
+    padding: 0.4rem 0.6rem;
+    border-radius: 15px;
+    margin-bottom: .5rem;
+}
+
+.category-sports{           background: var(--sports-color);}
+.category-entertainment{    background: var(--entertainment-color);}
+.category-tech{             background: var(--tech-color);}
+
+
+
+
+
+
