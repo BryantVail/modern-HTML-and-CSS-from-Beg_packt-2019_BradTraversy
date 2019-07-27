@@ -1,0 +1,62 @@
+#showcase{
+    color: #fff;
+    background: var(--dark-color);
+    padding: 2rem;
+    position: relative;
+    /* :before psuedo selector is positioned with the first non-static */
+
+}
+
+#showcase:before{
+    content:'';
+    background: url(../content/image_resources/featured.jpg)
+        no-repeat
+        center 
+        center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .4;
+}
+
+#showcase .showcase-container {
+    /* display */
+        display: grid;
+        justify-content: center;
+        /* 2 columns, 1:1 ratio of boxes */
+            /* this puts the single element that's currently within 
+            the element in the first column
+            or 'the left side' of the page */
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center; 
+    height: 50vh;
+}
+
+#showcase .showcase-content{
+    z-index: 1;
+}
+
+#showcase .showcase-content p{
+    margin-bottom: 1rem;
+}
+
+/* Home Articles */
+#home-articles .articles-container{
+    /* display */
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1rem;
+    }
+
+
+
+
+
+
+
+
+
+
+
