@@ -39,6 +39,12 @@ img{
 
 }
 
+input{
+    min-height: 1.8rem;
+    border-radius: .5rem;
+    margin: .5rem 0;
+}
+
 h1, h2, h3, h4, h5, h6{
     font-family: 'Staatliches', cursive;
     margin-bottom: .55rem;

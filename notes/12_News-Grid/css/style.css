@@ -103,6 +103,9 @@ body{
         grid-gap: 1.5rem;
         align-items: center;
         justify-content: center;
+        /* spacing */
+            /* push down the logo */
+            padding-top: 1rem;
     }
     #main-footer .footer-container > *:last-child{
         background: #444;

@@ -21,34 +21,89 @@
             padding: .5rem;
         }
 
+    /* showcase */
+        /* showcase is not changed until the next breakpoint */
+
     /* Home Articles */
         #home-articles .articles-container{
             grid-template-columns: repeat(2, 1fr);
         }
         #home-articles .articles-container >*:first-child,
         #home-articles .articles-container >*:last-child{
-            /* grid-template-columns: repeat(1, 1fr); */
+            /* from: repeat(2, 1fr); */
+            /* to-equivalent: "grid-template-columns: repeat(1, 1fr);" */
+                /* from 2 columns to 1 within first & last child */
             grid-template-columns: 1fr;
             
         }
 
         #home-articles .articles-container >*:first-child{
+            /* from: 1 / span 2 */
             grid-column: 1
         }
+        
         #home-articles .articles-container >*:last-child{
+            /* from: grid-column: 2 / span 2; */
             grid-column: 1;
         }
 
+/* breakpoint */
 @media(max-width: 600px){
 
     /* stack-grid-items */
         #showcase .showcase-container{
             grid-template-columns: 1fr;
-
         }
+        /* main-content */
+        #home-articles .articles-container{
+            grid-template-columns: 1fr;
+        }
+        
+        /* footer */            
+            #main-footer .footer-container{
+                grid-template-columns: 1fr;
+            }
+            /* eliminate span */
+            #main-footer .footer-container > *:last-child{
+                grid-column: 1;
+            }
+        /* add spacing after stacking grid */
+            /* #main-footer .footer-container{
+                
+            } */
+            /* extend the input elements the 
+            width of its container */
+            #main-footer .footer-container input,
+            #main-footer .footer-container .btn {
+                display: block;
+                justify-self: center;
+                margin: 0.8rem 0;
+                width: 100%;
+                /* grow the text-box */
+                min-height: 2rem;
+                
+            }
+
+            #main-footer .footer-container input#email{
+                border-radius: 5px;
+            }
+            
+            
+            #main-footer .footer-container > *:first-child,
+            #main-footer .footer-container > *:nth-child(2){
+                border-bottom: #444 dotted 2px;
+                padding-bottom: 1rem;
+            }
+    /* about page */
+            .page-container{
+                grid-template-columns: 1fr;
+            }
+            .page-container *:first-child{
+                grid-row: 1;
+            }
+            
 
 
-    /* footer */
 
 }
     

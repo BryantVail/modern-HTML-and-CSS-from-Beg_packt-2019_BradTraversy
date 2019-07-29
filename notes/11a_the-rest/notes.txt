@@ -26,7 +26,85 @@ favicons:
 
     "::before", 
         :before psuedo selector is displayed as 'absolute' positioning, it is positioned in association with the first 'relative' container. 
-        
+    
+Mobile-transitioning: {
+    [
+        {
+            breakpoint: "screen and (max-width: 768px)"
+            changes: [
+                {
+                    name: header, 
+                    changes: [
+                        ".social-media{ display: none;}",
+                        "#main-nav .container{
+                            grid-template-columns: 1fr"
+                            grid-gap: 1.2rem
+                        }",
+                        "#main-nav ul, 
+                        #main-nav .logo{
+                            justify-self: center;
+                        }",
+                        "#main-nav ul li a{
+                            padding: .5rem; /*from .75rem*/
+                        }",
+                },//end header changes
+                {
+                    name: "article grid",
+                    changes: [
+                        "#home-articles .articles-container{
+                            /*go from 3 columns of horizontal space 
+                            to only 2*/
+                            grid-template-columns: repeat(2, 1fr);
+                        }",
+                        "#home-articles articles-container > *:first-child{
+                            /*from: "repeat(2, 1fr);*/
+                            grid-template-columns: 1fr;
+                            /*from: 1 / span 2*/
+                            grid-column: 1;
+                        }",
+                        "#home-articles .articles-container > *:last-child{
+                            /* from: repeat(2, 1fr); */
+                                /* from 2 columns to 1 within last child */
+                            grid-template-column: 1fr;
+                            /* from: grid-column: 2 / span 2; */
+                            grid-column: 1;
+                        }",
+                    ]
+                }//end article grid changes
+            ]
+        },// end breakpoint (max-width: 768px)
+        {
+            breakpoint: "(max-width: 600px)",
+            changes: [
+                {
+                    name: "showcase",
+                    changes: [
+                        "#showcase .showcase-container{
+                            /* from: "repeat(2, 1fr);" */
+                            grid-template-columns: 1fr;
+                        }",
+                        "#home-articles .articles-container{
+                            /* from: "repeat(3, 1fr);" */
+                            grid-template-column: 1fr;
+                        }",
+                        "#main-footer .footer-container{
+                            /* from: "repeat(4, 1fr);" */
+                            grid-column: 1fr;
+                        }",
+                        "/* copyright is spanned across the bottom, disrupting the new 'One Column' identified by the 'grid-template-columns' property */
+                        #main-footer .footer-container > *:last-child{
+                            /* from: "1 / span 4"
+                            grid-column: 1;
+                        }",
+                        
+                    ]
+                }
+            ]
+        }
+
+        "justify-self: center
+    ]
+}
 
 
 
