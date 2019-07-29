@@ -1,0 +1,32 @@
+/* mobile.css */
+/* media="screen and max-width(768px)" */
+@media(max-width: 768px){
+    /* navigation */
+    
+        #main-nav .social-media{
+            
+            display: none;
+        }
+        #main-nav .container{
+            grid-template-columns: 1fr;
+            grid-gap: 1.2rem;
+        }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

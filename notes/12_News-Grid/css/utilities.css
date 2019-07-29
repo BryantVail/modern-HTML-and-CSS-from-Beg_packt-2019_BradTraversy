@@ -1,3 +1,37 @@
+
+
+
+
+/* card */
+.card{
+    background: #fff;
+    padding: 1rem;
+}
+
+/* list */
+    .list li{
+        padding: 0.5rem 0;
+        border-bottom: #555 dotted 1px;
+        width: 90%;
+    }
+    .list li a:hover{
+        color: var(--primary-color);
+    }
+
+/* conainer */
+    /* inner page container */
+    .page-container{
+        display: grid;
+        grid-template-columns: 5fr 2fr;
+        margin: 2rem 0;
+        grid-gap: 1.5rem;
+    }
+    .page-container > *:first-child{
+        grid-row: 1 /span 3;
+    }
+
+
+/* button */
 .btn{
     display: inline-block;
     background: var(--dark-color);
@@ -29,27 +63,86 @@
     text-align: center;
 }
 
-/* card */
-/* card */
-/* card */
-    .card{
-        background: #fff;
-        padding: 1rem;
+/* background */
+    .bg-dark{
+        background: var(--dark-color);
+        color: #fff;
     }
+
+    .bg-primary{
+        background: var(--primary-color);
+        color: #fff;
+    }
+
+    .bg-secondary{
+        background: var(--secondary-color);
+        color: #fff;
+    }
+
+
 
 .category{
     display: inline-block;
     color: white;
     font-size: .55rem;
     text-transform: uppercase;
-    padding: 0.4rem 0.6rem;
+    padding: 0.4rem 0.7rem;
     border-radius: 15px;
+    margin-left: .5rem;
+    margin-right: .5rem;
     margin-bottom: .5rem;
 }
 
 .category-sports{           background: var(--sports-color);}
 .category-entertainment{    background: var(--entertainment-color);}
 .category-tech{             background: var(--tech-color);}
+
+
+
+
+/* spacing */
+    /* padding */
+        .pad-y-1{padding-top: 3px; padding-bottom: 3px;}
+        .pad-y-2{padding-top: 6px; padding-bottom: 6px;}
+        .pad-y-3{padding-top: 10px; padding-bottom: 10px;}
+        .pad-y-4{padding-top: 14px; padding-bottom: 14px;}
+        .pad-y-5{padding-top: 20px; padding-bottom: 20px;}
+        
+        .pad-x-1{padding-right: 3px; padding-left: 3px;}
+        .pad-x-2{padding-right: 6px; padding-left: 6px;}
+        .pad-x-3{padding-right: 10px; padding-left: 10px;}
+        .pad-x-4{padding-right: 14px; padding-left: 14px;}
+        .pad-x-5{padding-right: 20px; padding-left: 20px;}
+        
+        .pad-1{padding: 3px;}
+        .pad-2{padding: 6px;}
+        .pad-3{padding: 10px;}
+        .pad-4{padding: 14px;}
+        .pad-5{padding: 20px;}
+
+    /* margin */
+        .margin-y-1{margin-top: 3px; margin-bottom: 3px;}
+        .margin-y-2{margin-top: 6px; margin-bottom: 6px;}
+        .margin-y-3{margin-top: 10px; margin-bottom: 10px;}
+        .margin-y-4{margin-top: 14px; margin-bottom: 14px;}
+        .margin-y-5{margin-top: 20px; margin-bottom: 20px;}
+        
+        .margin-x-1{margin-right: 3px; margin-left: 3px;}
+        .margin-x-2{margin-right: 6px; margin-left: 6px;}
+        .margin-x-3{margin-right: 10px; margin-left: 10px;}
+        .margin-x-4{margin-right: 14px; margin-left: 14px;}
+        .margin-x-5{margin-right: 20px; margin-left: 20px;}
+        
+        .margin-1{margin: 3px;}
+        .margin-2{margin: 6px;}
+        .margin-3{margin: 10px;}
+        .margin-4{margin: 14px;}
+        .margin-5{margin: 20px;}
+
+/* heading sizes */
+    .l-heading{
+        font-size: 3rem;
+    }
 
 
 

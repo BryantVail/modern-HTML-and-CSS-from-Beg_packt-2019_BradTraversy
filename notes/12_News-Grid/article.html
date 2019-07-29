@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>News Grid</title>
+    <title>News Grid | Article</title>
     <!-- content dependencies -->
         <!-- fontawesome -->
             <script src="https://kit.fontawesome.com/47fa47b17b.js"></script>
@@ -19,11 +19,7 @@
         <!-- main -->
             <link rel="stylesheet" href="css/style.css">
         <!-- mobile -->
-            <link 
-                rel="stylesheet" 
-                href="css/mobile.css" 
-                media="screen and max-width(768px)"
-            >
+            <link rel="stylesheet" href="css/mobile.css" >
     <!-- favicon -->
     <link rel="shortcut icon" href="news-grid.ico" type="image/x-icon">
 </head>
@@ -52,28 +48,77 @@
             </div>
             <ul>
                 <li><a href="index.html" >Home</a></li>
-                <li><a href="about.html" class="current">About</a></li>
+                <li><a href="about.html" >About</a></li>
             </ul>
         </div>
     </nav>
     
 
-    <section id="about" class="pad-y-2">
+    <section id="article" class="pad-y-2">
         <div class="container"><!--to align content to the middle-->
             <div class="page-container"><!--grid area with sidebar area for extra adds or sidebar-->
                 <article class="card">
-                    <h1 class="l-heading">About Our Organization</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore dolorem exercitationem praesentium pariatur impedit porro ex consequuntur incidunt fugiat sed qui odit similique perspiciatis magnam aliquam unde tempora labore excepturi sapiente, architecto odio nesciunt. Exercitationem consequuntur, cumque rem totam nostrum in? Odit perspiciatis maxime ipsam eum, quam enim praesentium adipisci?</p>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga excepturi recusandae neque assumenda beatae pariatur quibusdam voluptatibus, consequuntur itaque corporis in est hic harum impedit ipsum animi tempora nobis sequi eaque rerum optio officiis aliquam ut blanditiis. Illum quia doloremque vero, eos consectetur cupiditate rerum quisquam quas minus ex officia eveniet sequi unde dolore animi excepturi soluta commodi placeat asperiores! Pariatur non consequuntur, provident culpa dolorem sunt maxime vel quisquam, dolor corporis possimus commodi labore accusamus et quos asperiores nulla amet voluptatum incidunt corrupti, itaque accusantium ducimus! Fuga repudiandae, omnis minima quos animi voluptas vel, atque placeat, quibusdam reiciendis accusantium quis amet. Dolorum corrupti quos similique culpa unde, animi, commodi quia magni eum nisi odio officiis necessitatibus libero quidem repellendus consectetur est labore rem tempore accusamus fuga. Sequi ab sed deserunt dolor nobis soluta. Doloremque porro dolores mollitia deserunt possimus harum molestias corporis quasi dicta minus, in, itaque, architecto quisquam.</p>
+                    <img src="content/image_resources/articles/ent1.jpg" alt="Entertainment-One">
+                    <h1 class="l-heading">Lorem Ipsum Dolor Sit.</h1>
+                    <div class="meta">
+                        <small>
+                            <!-- inline element to have smaller text by default -->
+                            <i class="fas fa-user"></i>
+                            Written By John Vail; January 12, 2019; 
+                        </small>
+                        <div class="category category-entertainment">Entertainment</div>
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, magni! Ex nihil commodi dolores exercitationem quod provident. Corrupti culpa corporis ducimus, unde voluptatem enim, maiores consequatur fugiat tenetur, ipsam impedit eaque eius! Tempora asperiores impedit quidem quos provident reiciendis qui inventore magnam eum fuga! Architecto, deserunt. Corrupti ipsum atque quo!
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad consequatur, voluptate suscipit expedita ut voluptatibus eum maiores non velit voluptates laborum quos fugiat minima aspernatur pariatur aperiam, cum sed ipsa adipisci tempora reiciendis. Labore expedita nam fugiat explicabo iste. Aperiam corrupti ut veritatis excepturi natus ipsa numquam repellendus autem, voluptatem blanditiis tempore repudiandae sed et eos, vero modi nulla. Ullam libero id numquam provident quae aliquam tempora porro repellat laboriosam voluptates dolore, dicta cum facere labore. Ipsa dolores hic libero, eveniet aut dignissimos voluptas excepturi consequuntur doloremque harum earum quae esse at aspernatur obcaecati, fuga molestiae iure vitae sequi veritatis. Adipisci sunt consequuntur alias similique sint voluptas explicabo ducimus eos architecto, sapiente sequi exercitationem pariatur tempore modi tempora dignissimos veritatis, vitae minima ad! Cupiditate ex harum, magnam vel saepe rerum tenetur ullam asperiores! Omnis, vero?
+                    </p>
+
                 </article>
-                <aside class="card bg-primary">
+                <aside id="categories" class="card">
+                    <h2>categories</h2>
+                    <ul class="list">
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-chevron-right"></i>
+                                Sports
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-chevron-right"></i>
+                                Entertainment
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-chevron-right"></i>
+                                Technology
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-chevron-right"></i>
+                                Fashion
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-chevron-right"></i>
+                                Lifestyle
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </aside>
+                <aside class="card bg-secondary">
                     <h2>Join Our Club</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, rem.</p>
                     <a href="#" class="btn btn-dark btn-block">Join Now</a>
                 </aside>
             </div>
         </div>
-        
     </section>
 
     <!-- footer -->

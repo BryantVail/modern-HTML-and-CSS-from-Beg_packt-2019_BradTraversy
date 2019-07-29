@@ -35,4 +35,52 @@ Css Grid: {
         }
     ]
 
+    05_grid-areas
+
+    grid-template-areas: 
+                'header header header'
+                'content content sidebar' /*2/3 of the bars/columns*/
+                'box-1 box-2 box-2'
+                "box-3 box-3 box-3"
+                "footer footer footer";
+    .header {
+    grid-area: header;/*declare the name of the grid area with the element*/
+
+__________________________________________
+News Grid Website, 
+    StyleDescriptions: [
+        {
+            favicons: 
+                dynamic drive favicon, 
+                tools.dynamicdrive.com/favicon 
+        },
+        {
+            Columns: 
+                When selecting the 'grid-template-columns' the action is allocatiing horizontal space based on virtical columns that take up lateral space. 
+        },
+        {
+            justify-self: 
+                justifies within the container" "
+        },
+        {
+            grid-continers-in-the-nav: 
+                "if 'main-nav' is the 'grid' container, then there would only be 1 container for the grid items"
+        },
+        {
+            ::before-in-showcase: 
+                "::before psuedo selector is displayed as 'absolute' positioning, it is positioned in association with the first 'relative' container."
+
+        },
+        {
+            
+        }
+    ]
+
+    
+
+
+
+    
+        
+
 }
