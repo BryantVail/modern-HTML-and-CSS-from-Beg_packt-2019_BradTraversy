@@ -1,0 +1,104 @@
+//Sass
+//Syntactically Awesome StyleSheets
+
+Sass files are compiled to normal CSS, 
+Many types of Sass Compilers 
+
+node-Sass 
+    watches Sass Folder & compiles it to another folder,
+    alternative: Koala, 
+    vs-code extensions 
+        some students don't use vs-code 
+
+what does Sass offer: 
+    variables, 
+    conditionals, 
+    nesting, 
+    inheritance, 
+    partials/imports, 
+    operators & calculations, 
+    functions & mixins, 
+    color functions 
+
+-----------------------------------
+installing sass: 
+    npm 
+    npm install node-sass
+    add 'script' to "scripts"
+        "node-sass -w scss/ -o dist/css/ --recursive"
+        //         -Watch   -OutputFolder
+    npm run sass 
+        > 14_sass@1.0.0 sass C:\Users\bvail\Documents\GitHub\modern-HTML-and-CSS-from-Beg_packt-2019_BradTraversy\notes\14_Sass
+        > node-sass -w scss/ -o dist/css/ --recursive
+    
+'dist' directory: 
+    project directory 
+
+----------------------------------------
+Variables & Partials: 
+    Partials:
+        are bundled by Sass, 
+        "_": 
+            prefix of filename identifies 'scss' files as 'partials'
+        'import variables': 
+            "@import 'variables';"
+            do NOT add file extension or 'partial' underscore
+    
+_________________________________________________
+nesting & structuring
+    wildcard: '&', 
+        -can be used in place of any characters
+    pseudo-selectors: 
+        a{
+            color: #333;
+            &:hover{
+                color: coral;
+            }
+        }
+
+_________________________________________________
+Inheritance & Contrast
+    %btn-shared{
+        display: inline-block;
+        border: none;
+        padding: .7rem 2rem;
+        cursor: pointer;
+        text-decoration: none;
+        margin-top: 1rem;
+    }
+
+    .btn{
+        &-light{
+            @extend %btn-shared;
+            background: $light-color;
+            color: #333;
+        }
+    }
+    or 
+    .btn-light{
+        @extend %btn-shared;
+        background: $light-color;
+        color: #333;
+    }
+
+
+
+
+_________________________________________________
+Functions, Mixins, & More 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

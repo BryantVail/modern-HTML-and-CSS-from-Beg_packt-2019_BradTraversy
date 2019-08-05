@@ -1,0 +1,25 @@
+{
+  "name": "modern-html-and-css-from-beg_packt-2019_bradtraversy",
+  "version": "1.0.0",
+  "description": "tutorial on html and css",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BryantVail/modern-HTML-and-CSS-from-Beg_packt-2019_BradTraversy.git"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "web"
+  ],
+  "author": "Bryant Vail",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BryantVail/modern-HTML-and-CSS-from-Beg_packt-2019_BradTraversy/issues"
+  },
+  "homepage": "https://github.com/BryantVail/modern-HTML-and-CSS-from-Beg_packt-2019_BradTraversy#readme"
+}

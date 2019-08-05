@@ -1,0 +1,24 @@
+
+
+git --version
+
+//git add all
+git add .
+
+//git status
+git status
+
+//commit to local, -message
+git commit -m 'initial commit'
+
+//push to master
+git 
+
+
+
+
+
+
+
+
+
