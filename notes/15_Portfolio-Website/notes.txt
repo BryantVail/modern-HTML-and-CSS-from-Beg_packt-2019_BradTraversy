@@ -1,0 +1,13 @@
+//Final project
+________________________________________________
+//Video1
+install 'node-sass'
+set-up 'script' from package.json
+    name: 'sass', 
+    script: 'node-sass -w {Sass-directory} -o dist/{css-directory} --recursive'
+
+
+
+    font: dosis
+
+

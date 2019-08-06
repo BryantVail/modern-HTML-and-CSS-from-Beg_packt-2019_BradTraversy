@@ -10,8 +10,8 @@ body {
   line-height: 1.5; }
 
 header {
-  background: #333;
-  color: #f4f4f4;
+  background: #f4f4f4;
+  color: #000;
   padding: 1rem; }
   header h1 {
     text-align: center; }
@@ -25,7 +25,7 @@ header {
     color: #fff; }
   .section-b {
     background: skyblue;
-    color: #fff; }
+    color: #000; }
 
 .btn-light, .btn-dark {
   display: inline-block;
@@ -38,7 +38,17 @@ header {
 .btn-light {
   background: #f4f4f4;
   color: #333; }
+  .btn-light:hover {
+    --webkit-transform: $property;
+    -ms-transform: rotate(10deg);
+    transform: rotate(10deg);
+    background-color: #dbdbdb; }
 
 .btn-dark {
   background: #333;
   color: #fff; }
+  .btn-dark:hover {
+    --webkit-transform: $property;
+    -ms-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+    background-color: #4d4d4d; }

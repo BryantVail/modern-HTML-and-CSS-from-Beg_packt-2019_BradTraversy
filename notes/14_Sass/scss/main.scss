@@ -1,6 +1,6 @@
 // main.scss
 @import 'variables';
-
+@import 'functions';
 
 *{
     margin: 0;
@@ -17,8 +17,8 @@ body {
 
 // nesting
 header{
-    background: $dark-color;
-    color: $light-color;
+    background: $light-color;
+    color: set-text-color(lightcoral);
     padding: 1rem;
 
     h1{
@@ -34,11 +34,11 @@ header{
     }
     &-a{
         background: $primary-color;
-        color: #fff;
+        color: set-text-color($primary-color);
     }
     &-b{
         background: $secondary-color;
-        color: #fff;
+        color: set-text-color($secondary-color);
     }
 }
 
@@ -63,12 +63,20 @@ header{
         @extend %btn-shared;
         background: $light-color;
         color: #333;
+        &:hover{
+            @include transform(rotate(10deg));
+            background-color: darken($light-color, 10%);
+        }
     }
 
     &-dark{
         @extend %btn-shared;
         background: $dark-color;
         color: #fff;
+        &:hover{
+            @include transform(rotate(-10deg));
+            background-color: lighten($dark-color, 10%);
+        }
     }
 }
 

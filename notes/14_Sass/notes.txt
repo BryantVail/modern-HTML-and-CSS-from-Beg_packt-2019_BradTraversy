@@ -87,8 +87,22 @@ Inheritance & Contrast
 _________________________________________________
 Functions, Mixins, & More 
 
+functions: 
+    block of code 
 
-
+functions vs mixins: 
+    functions have to return something
+        'return' key, 
+    
+Mixins: 
+    add a transform, 
+    define: 
+        @mixin {mixin-name}($property){
+            --webkit-transform: $property;
+            -ms-transform: $property;
+            transform: $property;
+        }
+    @include {mixin-name}(rotate(20deg));
 
 
 
