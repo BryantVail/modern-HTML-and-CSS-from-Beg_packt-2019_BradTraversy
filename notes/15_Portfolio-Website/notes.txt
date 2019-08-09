@@ -9,5 +9,23 @@ set-up 'script' from package.json
 
 
     font: dosis
+________________________________________________
+{
+    name: "header & main nav",
+    description: "showcase & main nav",
+    notes: [
+
+    ],
+    aspects: [
+        {
+            name: ".container",
+            notes: [
+                "used to center content",
+                "css utility class",
+            ]
+        }
+    ]
+}
+
 
 
