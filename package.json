@@ -21,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/BryantVail/modern-HTML-and-CSS-from-Beg_packt-2019_BradTraversy/issues"
   },
-  "homepage": "https://github.com/BryantVail/modern-HTML-and-CSS-from-Beg_packt-2019_BradTraversy#readme"
+  "homepage": "https://github.com/BryantVail/modern-HTML-and-CSS-from-Beg_packt-2019_BradTraversy#readme",
+  "dependencies": {
+    "node-sass": "^4.12.0"
+  }
 }

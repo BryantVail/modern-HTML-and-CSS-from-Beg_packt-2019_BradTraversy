@@ -1,58 +1,47 @@
-@import 'config';
+@import "config";
 
-
-*{
+//Clear
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+// Base Element CSS
 body {
-    font-family: 'dosis', sans-serif;
+    font-family: "dosis", sans-serif;
     line-height: 1.6;
     color: $dark-color;
     background: $light-color;
 }
 
-a{
+a {
     text-decoration: none;
     color: $dark-color;
 }
 
-ul{
+ul {
     list-style: none;
-
 }
 
-h2, h3, h4{
+h2,
+h3,
+h4 {
     text-transform: uppercase;
 }
 
-img{
+img {
     width: 100%;
 }
+//End Base CSS
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//Header
+#header {
+    &-home {
+        background: $background-image no-repeat center right / cover;
+        height: 100vh;
+        color: #fff;
+    }
+    &-inner {
+    }
+}
