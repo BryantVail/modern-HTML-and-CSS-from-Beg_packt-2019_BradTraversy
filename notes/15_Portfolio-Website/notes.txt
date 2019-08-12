@@ -50,16 +50,66 @@ ________________________________________________
     name: "header & main nav",
     description: "showcase & main nav",
     notes: [
-
+        "body element"
     ],
     aspects: [
         {
-            name: ".container",
+            name: "header#header-home",
+            description: "",
             notes: [
-                "used to center content",
-                "css utility class",
+
+            ],
+            aspects: [
+                {
+                    name: "div.container",
+                    notes: [
+                        "used to center content",
+                        "css utility class",
+                    ],
+                    aspects: [
+                        {
+                            name: "nav#main-nav",
+                            notes: [
+
+                            ],
+                            aspects: [
+                                {
+                                    name: "img.logo",
+                                    notes: [
+
+                                    ],
+                                    aspects: [
+                                        
+                                    ]
+                                },
+                                {
+                                    name: "link-list",
+                                    description: "ul",
+                                    notes: [
+                                        "list-style: none",
+                                    ],
+                                    aspects: [
+                                        {
+                                            name: "li > a > text",
+                                            description: "Navbar content",
+                                            notes: [
+                                                "Home, About, Work, Contact"
+                                            ],
+                                            aspects: [
+
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                    ]
+                },//end aspects."header#header-home"
+
             ]
-        }
+        },
+        
+        
     ]
 }
 
