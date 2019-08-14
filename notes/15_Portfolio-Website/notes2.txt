@@ -1,0 +1,188 @@
+//Final project
+________________________________________________
+//Video1
+install 'node-sass'
+    -<!--different machine may need this-->
+set-up 'script' from package.json
+    name: 'sass', 
+    script: 'node-sass -w {Sass-directory} -o dist/{css-directory} --recursive'
+
+    BaseCss: {
+        //Clear
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        // Base Element Css
+        body {
+            font-family: "dosis", sans-serif;
+            line-height: 1.6;
+            color: $dark-color;
+            background: $light-color;
+        }
+
+        a {
+            text-decoration: none;
+            color: $dark-color;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        h2,
+        h3,
+        h4 {
+            text-transform: uppercase;
+        }
+
+        img {
+            width: 100%;
+        }
+        //End Base Css
+    },//end BaseCss
+
+    font: dosis
+________________________________________________
+{
+    name: "header & main nav",
+    description: "showcase & main nav",
+    notes: [
+        "body element"
+    ],
+    aspects: [
+        {
+            name: "header#header-home",
+            description: "",
+            notes: [
+
+            ],
+            aspects: [
+                {
+                    name: "div.container",
+                    notes: [
+                        "used to center content",
+                        "css utility class",
+                    ],
+                    aspects: [
+                        {
+                            name: "nav#main-nav",
+                            notes: [
+
+                            ],
+                            aspects: [
+                                {
+                                    name: "img.logo",
+                                    notes: [
+
+                                    ],
+                                    aspects: [
+                                        
+                                    ]
+                                },
+                                {
+                                    name: "link-list",
+                                    description: "ul",
+                                    notes: [
+                                        "list-style: none",
+                                        "class 'current'"
+                                    ],
+                                    aspects: [
+                                        {
+                                            name: "li > a > text",
+                                            description: "Navbar content",
+                                            notes: [
+                                                "Home, About, Work, Contact"
+                                            ],
+                                            aspects: [
+
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            name: "div.header-content",
+                            description: "area in the header that shows imagery* & themes the interaction for the rest of the page.",
+                            notes: [
+
+                            ],
+                            aspects: [
+                                {
+                                    name: "h1",
+                                    description: "",
+                                    notes: [
+                                        text: "I am {name} the"
+                                    ]
+                                    aspects: [
+                                        
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },//end aspects."header#header-home"
+
+            ]
+        },
+        
+        
+    ]
+}
+
+
+________________________________________________
+//Video3
+//Header & Main Nav 
+markup: {
+
+
+    /*Mark-Up*/
+    header#header-home
+        /*utility when elements that are ultimately children of 
+        the '.container' need to be positioned; commonly for centering content */
+        .container
+            nav#main-nav 
+                img.logo
+                ul 
+                    li.current{innerHtml: "Home"}
+                    li{innerHtml: "About"}
+                    li{innerHtml: "Work"}
+                    li{innerHtml: "Contact"}
+            .header-content 
+                h1{
+                    innerHtml: "I Am Bryant V. The",
+                    span.txt-type 
+                        data-wait: 3000;
+                        data-words: '["Photographer", "Designer", "UI-UX Dev"]'
+                    
+                }
+                p.lead-text 
+                    innerHtml: "I Specialize in Graphic Design, UI/UX, and Photography"
+                a.btn-light
+                    href: "work.html"
+                    innerHtml: "View My Work"
+},    /*End Mark-Up*/
+Styling: {
+    #logo{ /* outside of the '#header' bc it could be used elsewhere */
+        
+    }
+
+    //Header 
+    #header{
+        /* makes the style wildcard (&) reflect '#' even though there is not a '#header' css id */
+        &-home{
+            background: $background-image no-repeat center right / cover;
+            height: 100vh;
+            color: #fff;
+        }
+        &-inner{
+
+        }
+    }
+}
+
+
