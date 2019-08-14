@@ -1,7 +1,8 @@
 .container {
   max-width: 2000px;
   padding: 0 1.5rem;
-  margin: auto; }
+  margin: auto;
+  overflow: hidden; }
 
 * {
   margin: 0;
@@ -16,7 +17,8 @@ body {
 
 a {
   text-decoration: none;
-  color: #333; }
+  color: #333;
+  cursor: pointer; }
 
 ul {
   list-style: none; }
@@ -50,10 +52,16 @@ img {
 
 .logo {
   width: 70px;
-  color: white;
+  color: #fff;
   text-transform: uppercase; }
 
 #header-home {
   background: url("../img/project_resources/img/showcase.jpg") no-repeat center right/cover;
   height: 100vh;
   color: #fff; }
+  #header-home .header-content {
+    text-align: center;
+    padding-top: 20%; }
+    #header-home .header-content h1 {
+      font-size: 4rem;
+      line-height: 1.2; }

@@ -1,5 +1,22 @@
-.container{
+.container {
     max-width: $website-width;
     padding: 0 1.5rem;
     margin: auto; //push container to the middle
+    overflow: hidden;
+}
+// Buttons// Buttons// Buttons
+%btn-shared {
+    //display
+    display: inline-block;
+    border: none;
+    padding: 0.8rem 2rem;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.btn {
+    &-main {
+        @extend %btn-shared;
+        color: #333;
+    }
 }

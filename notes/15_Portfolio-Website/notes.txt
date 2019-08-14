@@ -54,11 +54,53 @@ ________________________________________________
     ],
     aspects: [
         {
+            name: "_utilities",
+            aspects: [
+                {
+                    name: "buttons",
+                    notes: [
+
+                    ],
+                    aspects: [
+                        {
+                            name: "%btn-shared",
+                            description: "shared attributes of buttons",
+                            notes: [
+                                "@extend %btn-shared; is how to use this partial",
+                            ]
+                            styles: [
+                                "display: inline-block;",
+                                "padding: 0.8rem 2rem;",
+                                "cursor: pointer;",
+                                "transition: all 0.5s;"
+                            ]
+                        },
+                        {
+                            name: ".btn",
+                            description: "main-btn",
+                            styles: [
+                                
+                            ]
+                        }
+                    ]
+                },
+                {
+
+                }
+            ],
+        },
+        {
             name: "header#header-home",
-            description: "",
+            description: 
+                "first child of the body, containing 'main-nav', and 'header-content'",
             notes: [
 
             ],
+            styles: [
+                "background: $background-image no-repeat center right / cover;",
+                "height: 100vh;//to span the height of the view",
+                "color: #fff;",
+            ]
             aspects: [
                 {
                     name: "div.container",
@@ -66,41 +108,129 @@ ________________________________________________
                         "used to center content",
                         "css utility class",
                     ],
+                    styles: [
+                        "max-width: $website-width",
+                        "padding: 0rem 1.5rem;",
+                        "margin: auto;//center content"
+                    ]
                     aspects: [
                         {
                             name: "nav#main-nav",
                             notes: [
 
                             ],
+                            styles: [
+                                "display: flex;",
+                                "justify-content: space-between;//spread out elements",
+
+                            ]
                             aspects: [
                                 {
                                     name: "img.logo",
                                     notes: [
 
                                     ],
+                                    styles: [
+                                        "width: 70px;",
+                                        "color: white;",
+                                        "text-transform: uppercase;"
+                                    ]
                                     aspects: [
                                         
                                     ]
-                                },
+                                },//end img.logo
                                 {
-                                    name: "link-list",
+                                    name: "nav-list",
                                     description: "ul",
                                     notes: [
                                         "list-style: none",
                                     ],
+                                    styles: [
+                                        "display: flex;",
+
+                                    ]
                                     aspects: [
                                         {
-                                            name: "li > a > text",
+                                            name: "li",
                                             description: "Navbar content",
                                             notes: [
                                                 "Home, About, Work, Contact"
                                             ],
-                                            aspects: [
+                                            styles: [
+                                                "padding: 1rem 1.5rem;",
 
+                                            ]
+                                            aspects: [
+                                                {
+                                                    name: "a",
+                                                    styles: [
+                                                        "color: #fff",
+                                                        "border-bottom: 3px transparent solid;",
+                                                        "transition: border-color .5s;",
+                                                        ".current: border-color: $main-color;",
+                                                        "&:hover{
+                                                            border-color: $medium-color;
+                                                        }"
+                                                    ]
+                                                }
                                             ]
                                         }
                                     ]
-                                }
+                                },//end nav-list
+                                {
+                                    name: "div.header-content",
+                                    description: "",
+                                    notes: [
+
+                                    ],
+                                    styles: [
+                                        "text-align: center;",
+                                        "padding-top: 20%;"
+                                    ],
+                                    aspects: [
+                                        {
+                                            name: "h1",
+                                            description: "",
+                                            notes: [
+
+                                            ], 
+                                            styles: [
+                                                "font-size: 4rem;",
+                                                "line-height: 1.2;"
+                                            ]
+                                            aspects: [
+                                                text: "I am Bryant The",
+                                                {
+                                                    name: 'span',
+                                                    attributes: [
+                                                        class: "text-type",
+                                                        data-wait: "3000",
+                                                        data-words: [
+                                                            "Photographer",
+                                                            "Designer",
+                                                            "UI/UX Dev"
+                                                        ]
+                                                    ],
+                                                },//end span for text effect
+                                            ]
+                                        },//end h1
+                                        {
+                                            name: "paragraph",
+                                            attributes: [
+                                                class: "lead",
+                                                text: "I specialize in Graphic Design, UI/UX, and Photography"
+                                            ]
+                                        },//end paragraph
+                                        {
+                                            name: "link",
+                                            attributes: [
+                                                href: "work.html",
+                                                class: "btn-light",
+                                                text: "view my work"
+                                            ]
+                                        }//end a.btn-light
+                                    ],//end aspects
+                                }//end div.header-content
                             ]
                         },
                     ]

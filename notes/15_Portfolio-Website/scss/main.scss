@@ -19,6 +19,7 @@ body {
 a {
     text-decoration: none;
     color: $dark-color;
+    cursor: pointer;
 }
 
 ul {
@@ -34,7 +35,7 @@ h4 {
 img {
     width: 100%;
 }
-//End Base CSS
+//End Base CSS//End Base CSS//End Base CSS//End Base CSS
 
 // Main Nav
 #main-nav {
@@ -50,6 +51,7 @@ img {
                 text-transform: uppercase;
                 border-bottom: 3px transparent solid;
                 padding-bottom: 0.5rem;
+                //transition the border-color over .5seconds
                 transition: border-color 0.5s;
                 &.current {
                     border-color: $main-color;
@@ -66,17 +68,29 @@ img {
 .logo {
     width: 70px;
     // height: 80px;
-    color: white;
+    color: #fff;
     text-transform: uppercase;
 }
 
 // Header
 #header {
     &-home {
+        //this targets: #header-home
         background: $background-image no-repeat center right / cover;
         height: 100vh;
         color: #fff;
+        //Header Content
+        .header-content {
+            text-align: center;
+            padding-top: 20%;
+
+            h1 {
+                font-size: 4rem;
+                line-height: 1.2;
+            }
+        }
     }
     &-inner {
+        //this targets: #header-inner
     }
 }
