@@ -47,8 +47,9 @@ set-up 'script' from package.json
     font: dosis
 ________________________________________________
 {
-    name: "header & main nav",
-    description: "showcase & main nav",
+    name: "index.html",
+    description: 
+        "main page; organized by elements in the body",
     notes: [
         "body element"
     ],
@@ -77,15 +78,71 @@ ________________________________________________
                         },
                         {
                             name: ".btn",
-                            description: "main-btn",
-                            styles: [
-                                
+                            description: "button utility classes & implementation",
+                            aspects: [
+                                {
+                                    name: "&-main",
+                                    description: 
+                                        "extends %btn-shared, and is used as 'btn-main'",
+                                    styles: [
+                                        "@extend %btn-shared;",
+                                        "color: #333;",
+                                        "background-color: $main-color;"
+                                    ]
+                                },
+                                {
+                                    name: "&-light",
+                                    styles: [
+                                        "@extend %btn-shared;",
+                                        "color: $dark-color;",
+                                        "background-color: $light-color;"
+                                    ]
+                                },//end "&-light"
+                                {
+                                    name: "&-dark",
+                                    styles: [
+                                        @extend "%btn-shared",
+                                        "color: $light-color;",
+                                        "background-color: $dark-color"
+                                    ]
+                                },
+                                {
+                                    name: ":hover",
+                                    description: 
+                                        "button hover actions that are necessary to define for the purposes of multiple 'button' implementations that could take the form of varying html elements",
+                                    styles: [
+                                        "button[class^="btn-"]:hover",
+                                        "a[class^="btn-"]:hover",
+                                        "input[class^="btn-"]:hover",
+                                        "{background-color: $main-color;}"
+                                    ]
+                                }
                             ]
-                        }
+                        },//end .btn 
                     ]
-                },
+                },//end Buttons
                 {
-
+                    name: "text.utilities",
+                    description: 
+                        "utilities regarding specific instances of text design catered for common use cases",
+                    aspects: [
+                        {
+                            name: ".lead",
+                            description:
+                                "text that is usually intended to give more information about an associated header text value; usually beneath a header, describing the header"
+                            styles: [
+                                "font-size: 1.3rem;",
+                                "margin-bottom: 2rem;"
+                            ]
+                        },//end .lead
+                        {
+                            name: ".text-center",
+                            description: "text-align: center; aligns text to the ceneter",
+                            styles: [
+                                "text-align: center;"
+                            ]
+                        },// end .text-center
+                    ]
                 }
             ],
         },

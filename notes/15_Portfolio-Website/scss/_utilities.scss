@@ -9,7 +9,9 @@
     //display
     display: inline-block;
     border: none;
+    border-radius: 4px;
     padding: 0.8rem 2rem;
+    margin: 0.5rem 0;
     cursor: pointer;
     transition: all 0.5s;
 }
@@ -18,5 +20,114 @@
     &-main {
         @extend %btn-shared;
         color: #333;
+        background-color: var(--main-color);
     }
+    &-light {
+        @extend %btn-shared;
+        color: var(--dark-color);
+        background-color: var(--light-color);
+    }
+    &-dark {
+        @extend %btn-shared;
+        color: var(--light-color);
+        background-color: var(--dark-color);
+    }
+} /*end .btn */
+
+button[class^="btn-"]:hover,
+a[class^="btn-"]:hover,
+input[class^="btn-"]:hover {
+    background-color: var(--main-color);
+}
+
+// Text.Utilities // Text.Utilities // Text.Utilities // Text.Utilities
+.section-title {
+    //heading on a sub-section of a page
+    font-size: 2rem;
+    display: block;
+    padding: 0.5rem;
+    text-align: center;
+    font-weight: 100;
+    // duplicate uppercase style, but future projects may not have ALL
+    // heading elements to be uppercase as in this project
+    text-transform: uppercase;
+}
+
+.lead {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+// spacing // spacing // spacing // spacing
+.pad {
+    // pad-y
+    &-y-1 {
+        padding: 1rem 0;
+    }
+    &-y-2 {
+        padding: 2rem 0;
+    }
+    &-y-3 {
+        padding: 3rem 0;
+    }
+    &-y-4 {
+        padding: 4rem 0;
+    }
+    // pad-x
+    &-x-1 {
+        padding: 0 1rem;
+    }
+    &-x-2 {
+        padding: 0 2rem;
+    }
+    &-x-3 {
+        padding: 0 3rem;
+    }
+    &-x-4 {
+        padding: 0 4rem;
+    }
+}
+
+//margin //margin //margin
+.margin {
+    // margin-y
+    &-y-1 {
+        margin: 1rem 0;
+    }
+    &-y-2 {
+        margin: 2rem 0;
+    }
+    &-y-3 {
+        margin: 3rem 0;
+    }
+    &-y-4 {
+        margin: 4rem 0;
+    }
+    // margin-x
+    &-x-1 {
+        margin: 0 1rem;
+    }
+    &-x-2 {
+        margin: 0 2rem;
+    }
+    &-x-3 {
+        margin: 0 3rem;
+    }
+    &-x-4 {
+        margin: 0 4rem;
+    }
+}
+
+//Visual Techniques With Elements //Visual Techniques With Elements
+.bottom-line {
+    height: 3px;
+    width: 6rem;
+    background: var(--main-color);
+    //block element needed to manipulate size (height & width)
+    display: block;
+    margin: 0 auto 1rem auto;
 }

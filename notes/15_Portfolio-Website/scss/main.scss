@@ -12,13 +12,13 @@
 body {
     font-family: "dosis", sans-serif;
     line-height: 1.6;
-    color: $dark-color;
-    background: $light-color;
+    color: var(--dark-color);
+    background: var(--light-color);
 }
 
 a {
     text-decoration: none;
-    color: $dark-color;
+    color: var(--dark-color);
     cursor: pointer;
 }
 
@@ -54,10 +54,10 @@ img {
                 //transition the border-color over .5seconds
                 transition: border-color 0.5s;
                 &.current {
-                    border-color: $main-color;
+                    border-color: var(--main-color);
                 }
                 &:hover {
-                    border-color: $medium-color;
+                    border-color: var(--medium-color);
                 }
             }
         }
@@ -76,7 +76,7 @@ img {
 #header {
     &-home {
         //this targets: #header-home
-        background: $background-image no-repeat center right / cover;
+        background: var(--background-image) no-repeat center right / cover;
         height: 100vh;
         color: #fff;
         //Header Content
@@ -92,5 +92,154 @@ img {
     }
     &-inner {
         //this targets: #header-inner
+    }
+}
+
+// Sections
+
+#home {
+    /*home section-a*/
+    &-a {
+        .specials {
+            margin-top: 3rem;
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-columns: repeat(4, 1fr);
+            .fas,
+            .fab {
+                color: var(--main-color);
+                padding-bottom: 0.4rem;
+            }
+        }
+    }
+    /*home section-b*/
+    &-b {
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+
+            li {
+                line-height: 2;
+
+                &.stats-title {
+                    font-size: 1.5rem;
+                }
+                &.stats-number {
+                    font-size: 2rem;
+                }
+            }
+            div {
+                padding: 3rem 0;
+                &:nth-child(odd) {
+                    background: var(--light-color);
+                }
+                &:nth-child(even) {
+                    background: var(--medium-color);
+                }
+            }
+        } //end .stats
+    } //end &-b
+    &-c {
+        //section container
+        .process {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 1.5rem;
+            text-align: center;
+
+            // .process-icon
+            &-icon {
+                //center text (the icon)
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                position: relative;
+                border-radius: 50%;
+                background: var(--dark-color);
+                color: set-text-color(#333);
+                // padding is moving the icon out of position
+
+                margin-right: auto;
+                margin-left: auto;
+                height: 130px;
+                width: 130px;
+
+                line-height: 130px;
+                text-align: center;
+                transition: all 1s;
+                // hover
+                &:hover {
+                    background: var(--main-color);
+                    width: 143px;
+                    height: 143px;
+                    line-height: 143px;
+
+                    .process-step {
+                        background: var(--dark-color);
+                        width: 60px;
+                        height: 60px;
+                        line-height: 60px;
+                    }
+                }
+            }
+
+            // steps
+            &-step {
+                //center the text ( the step number )
+                display: flex;
+                align-content: center;
+                justify-content: center;
+                //position
+                position: absolute;
+                top: 0;
+                right: 0;
+                font-size: 28px;
+                background: var(--main-color);
+                // circle
+                border-radius: 50%;
+                //height & width are moving the icon with padding, idk
+                height: 50px;
+                width: 50px;
+                line-height: 50px;
+                // padding-bottom: 0.3rem;
+                // padding: 0.4rem 0.2rem;
+                transition: all 1s;
+                text-align: center;
+                border: var(--light-color) 3px solid;
+
+                //hover
+            } //end .process-step
+        } // end .process
+    } //end &-c
+} //end #home
+
+//footer //footer //footer
+#main-footer {
+    background: var(--dark-color);
+    color: #fff;
+    height: 5rem;
+
+    .footer-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 5rem;
+
+        .social .fab,
+        .social .fas {
+            margin-right: 1rem;
+            border: 2px #fff solid;
+            font-size: 1.5rem;
+            border-radius: 50%;
+            height: 50px;
+            width: 50px;
+            line-height: 50px;
+            text-align: center;
+            // padding: 0.5rem;
+            transition: all 0.6s;
+            &:hover {
+                background: var(--main-color);
+            }
+        }
     }
 }
