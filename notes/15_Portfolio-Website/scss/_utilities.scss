@@ -131,3 +131,23 @@ input[class^="btn-"]:hover {
     display: block;
     margin: 0 auto 1rem auto;
 }
+
+// Backgrounds // Backgrounds // Backgrounds
+.bg {
+    &-main {
+        background: var(--main-color);
+        color: set-text-color($main-color);
+    }
+    &-light {
+        background: var(--light-color);
+        color: set-text-color($light-color);
+    }
+    &-dark {
+        background: var(--dark-color);
+        color: set-text-color($dark-color);
+    }
+    &-medium {
+        background: var(--medium-color);
+        color: set-text-color($medium-color);
+    }
+}

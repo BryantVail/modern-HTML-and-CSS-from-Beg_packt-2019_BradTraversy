@@ -91,7 +91,12 @@ img {
         }
     }
     &-inner {
+        //all other than index
         //this targets: #header-inner
+        background: var(--background-image) no-repeat 20% /*x-axis*/ 30%
+            /*y-axis*/ / cover;
+        height: 5.5rem;
+        border-bottom: 3px solid var(--main-color);
     }
 }
 
@@ -212,6 +217,100 @@ img {
         } // end .process
     } //end &-c
 } //end #home
+
+#about {
+    &-a {
+        .about-info {
+            display: grid;
+            grid-template-areas:
+                "bioimage   bio     bio"
+                "award1     award2  award3";
+            grid-gap: 1.2rem;
+        }
+
+        //grid area
+        .bio-image {
+            grid-area: bioimage;
+        }
+        .bio {
+            grid-area: bio;
+            border-left: 3px solid $main-color;
+            padding: 0.8rem;
+            background: $medium-color;
+        }
+        .award-1 {
+            grid-area: award1;
+        }
+        .award-2 {
+            grid-area: award2;
+        }
+        .award-3 {
+            grid-area: award3;
+        }
+
+        .award-1 .fas,
+        .award-2 .fas,
+        .award-3 .fas {
+            color: $main-color;
+            margin: 1rem;
+        }
+    } // end about-a
+    &-b {
+        .progress {
+            overflow: hidden;
+            height: 20px;
+            background: $medium-color;
+            border-radius: 6px;
+            margin-bottom: 0.6rem;
+
+            div {
+                height: 100%;
+                color: #fff;
+                text-align: center;
+                background-color: $main-color; /*color of the visual data; progress*/
+            }
+        }
+    } //end #about-b
+
+    &-c {
+        .about-logos {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 2rem;
+        }
+    }
+
+    &-d {
+        background: $medium-color;
+        .testimonials {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 0.5rem;
+
+            // Testimonial Text in a paragraph element
+            p {
+                border: solid 1px $dark-color;
+                border-radius: 4px;
+
+                padding: 0.5rem;
+            }
+            ul {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                margin-top: 1rem;
+
+                img {
+                    width: 80px;
+                    // height: 65px; /*picture stays the same size with this attribute commented out */
+                    border-radius: 50%;
+                    margin-right: 0.5rem;
+                }
+            }
+        }
+    }
+}
 
 //footer //footer //footer
 #main-footer {

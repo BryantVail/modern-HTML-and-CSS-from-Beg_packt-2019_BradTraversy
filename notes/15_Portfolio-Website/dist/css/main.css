@@ -108,6 +108,22 @@ input[class^="btn-"]:hover {
   display: block;
   margin: 0 auto 1rem auto; }
 
+.bg-main {
+  background: var(--main-color);
+  color: #f4f4f4; }
+
+.bg-light {
+  background: var(--light-color);
+  color: #000; }
+
+.bg-dark {
+  background: var(--dark-color);
+  color: #f4f4f4; }
+
+.bg-medium {
+  background: var(--medium-color);
+  color: #000; }
+
 * {
   margin: 0;
   padding: 0;
@@ -169,6 +185,11 @@ img {
     #header-home .header-content h1 {
       font-size: 4rem;
       line-height: 1.2; }
+
+#header-inner {
+  background: var(--background-image) no-repeat 20% 30%/cover;
+  height: 5.5rem;
+  border-bottom: 3px solid var(--main-color); }
 
 #home {
   /*home section-a*/
@@ -243,6 +264,74 @@ img {
       transition: all 1s;
       text-align: center;
       border: var(--light-color) 3px solid; }
+
+#about-a .about-info {
+  display: grid;
+  grid-template-areas: "bioimage   bio     bio" "award1     award2  award3";
+  grid-gap: 1.2rem; }
+
+#about-a .bio-image {
+  grid-area: bioimage; }
+
+#about-a .bio {
+  grid-area: bio;
+  border-left: 3px solid #ffbc00;
+  padding: 0.8rem;
+  background: #ccc; }
+
+#about-a .award-1 {
+  grid-area: award1; }
+
+#about-a .award-2 {
+  grid-area: award2; }
+
+#about-a .award-3 {
+  grid-area: award3; }
+
+#about-a .award-1 .fas,
+#about-a .award-2 .fas,
+#about-a .award-3 .fas {
+  color: #ffbc00;
+  margin: 1rem; }
+
+#about-b .progress {
+  overflow: hidden;
+  height: 20px;
+  background: #ccc;
+  border-radius: 6px;
+  margin-bottom: 0.6rem; }
+  #about-b .progress div {
+    height: 100%;
+    color: #fff;
+    text-align: center;
+    background-color: #ffbc00;
+    /*color of the visual data; progress*/ }
+
+#about-c .about-logos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2rem; }
+
+#about-d {
+  background: #ccc; }
+  #about-d .testimonials {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0.5rem; }
+    #about-d .testimonials p {
+      border: solid 1px #333;
+      border-radius: 4px;
+      padding: 0.5rem; }
+    #about-d .testimonials ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 1rem; }
+      #about-d .testimonials ul img {
+        width: 80px;
+        border-radius: 50%;
+        margin-right: 0.5rem; }
 
 #main-footer {
   background: var(--dark-color);
