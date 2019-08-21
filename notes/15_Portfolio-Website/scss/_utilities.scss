@@ -4,6 +4,7 @@
     margin: auto; //push container to the middle
     overflow: hidden;
 }
+
 // Buttons// Buttons// Buttons
 %btn-shared {
     //display
@@ -38,6 +39,7 @@ button[class^="btn-"]:hover,
 a[class^="btn-"]:hover,
 input[class^="btn-"]:hover {
     background-color: var(--main-color);
+    color: #333;
 }
 
 // Text.Utilities // Text.Utilities // Text.Utilities // Text.Utilities

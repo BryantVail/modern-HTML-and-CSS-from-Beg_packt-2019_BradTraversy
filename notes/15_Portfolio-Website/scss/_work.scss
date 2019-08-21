@@ -5,11 +5,12 @@
 }
 
 .item {
-    //contains childres that are positioned 'absolute'
+    //contains children that are positioned 'absolute'
     position: relative;
     background: $main-color;
     overflow: hidden;
 
+    // .item::after
     &::after {
         content: ""; //needed for the pseudo-selector
         position: absolute;
@@ -20,35 +21,26 @@
         left: 0;
         width: 100%;
         height: 100%;
+        //start the ::after content/overlay
+        // outside of the frame, parent hides overflow
         transform: scale(2) translateX(-75%) translateY(-75%) rotate(-28deg);
         transition: transform 3s cubic-bezier(0.2, 1, 0.3, 1);
     } //end ::after
 
     &:hover:after {
+        // move ::after back to 'translate(0, 0)'
         transform: scale(2) translateX(0) translateY(0) rotate(-28deg);
     }
 
     // .item-image
     &-image {
         transition: Transform 0.8s ease-in-out;
-        transform: translateZ(0);
+        transform: translateZ(0); //beneath the text
 
         height: auto;
-        display: block; //inline by default
+        display: block; //img is inline by default
     }
-    &-text {
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        opacity: 0;
-        text-align: center;
-        z-index: 1; //top
-        transform: translateY(-20%);
-        transition: opacity 500ms cubic-bezier(0.2, 1, 0.3, 1),
-            transform 500ms cubic-bezier(0.2, 1, 0.3, 1);
-    }
+    //.item-image img
     &-image img {
         position: absolute;
         top: 0;
@@ -57,6 +49,8 @@
         width: 100%;
         line-height: 0;
     }
+    // .item-image:before
+    // targets the .item
     &-image:before {
         content: "";
         display: block;
@@ -64,13 +58,59 @@
         overflow: hidden;
     }
     //scale image on hover
+    //.item:hover .item-image
     &:hover &-image {
         transform: scale(1.2);
     }
 
+    // .item-text
+    // text section atop the $main-color overlay
+    &-text {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        // removes .item-text from view so it can
+        // be transitioned to opacity: 1 on hover when
+        // the overlay drops over the img
+        opacity: 0;
+        text-align: center;
+        // on top but invisible until hover
+        z-index: 1; //top
+        transform: translateY(
+            -20%
+        ); //transform the location through the 'translateY(...)' property
+        transition: opacity 3000ms cubic-bezier(0.2, 1, 0.3, 1),
+            transform 2000ms cubic-bezier(0.2, 1, 0.3, 1);
+        transition-delay: 0.3s;
+    }
     //Bring in Text on hover
+    // .item:hover .item-text
     &:hover &-text {
         opacity: 1;
         transform: translateY(0);
+    }
+
+    // .item-text-wrap
+    &-text-wrap {
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    // .items .item-text > .item-text-title
+    &-text-title {
+        font-size: 2rem;
+        padding: 0 1rem;
+        margin: 5px 0 0 0;
+    }
+
+    &-category {
+        text-transform: uppercase;
+        font-size: 1.2rem; //smaller than title class
+        opacity: 0.7;
+        margin: 0;
     }
 }

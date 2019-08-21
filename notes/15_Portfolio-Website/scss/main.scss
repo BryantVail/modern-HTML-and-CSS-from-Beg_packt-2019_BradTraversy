@@ -23,6 +23,12 @@ a {
     cursor: pointer;
 }
 
+input,
+textarea {
+    border-radius: 4px;
+    box-shadow: none;
+    border: none;
+}
 ul {
     list-style: none;
 }
@@ -40,8 +46,11 @@ img {
 
 // Main Nav
 #main-nav {
+    // 1 dimentional container
     display: flex;
+    // spread out content
     justify-content: space-between;
+    //push down nav content
     padding-top: 0.8rem;
     ul {
         display: flex;
@@ -198,20 +207,26 @@ img {
                 //position
                 position: absolute;
                 top: 0;
-                right: 0;
+                left: 0;
                 font-size: 28px;
                 background: var(--main-color);
                 // circle
                 border-radius: 50%;
+
                 //height & width are moving the icon with padding, idk
                 height: 50px;
                 width: 50px;
                 line-height: 50px;
+
                 // padding-bottom: 0.3rem;
                 // padding: 0.4rem 0.2rem;
                 transition: all 1s;
                 text-align: center;
                 border: var(--light-color) 3px solid;
+
+                p {
+                    align-self: center;
+                }
 
                 //hover
             } //end .process-step
@@ -313,6 +328,60 @@ img {
     }
 }
 
+// contact page// contact page// contact page
+#contact {
+    // #contact-a
+    &-a {
+        .text-fields {
+            display: grid;
+            grid-template-areas:
+                "name email"
+                "subject phone"
+                "message message";
+            grid-gap: 1.2rem;
+            margin-bottom: 1.2rem;
+
+            .text-input {
+                padding: 0.5rem 1rem;
+            }
+
+            // input specific classes
+            .name-input {
+                grid-area: name;
+            }
+            .subject-input {
+                grid-area: subject;
+            }
+            .email-input {
+                grid-area: email;
+            }
+            .phone-input {
+                grid-area: phone;
+            }
+            .message-input {
+                grid-area: message;
+                height: 100px;
+            }
+        }
+        button[type="submit"] {
+            width: 50%;
+        }
+    } //end section-a
+    &-b {
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            text-align: center;
+        }
+    } //end .contact-b
+    &-c {
+        h1 {
+            text-align: center;
+            font-size: 4rem;
+        }
+    }
+}
+
 //footer //footer //footer
 #main-footer {
     background: var(--dark-color);
@@ -343,3 +412,6 @@ img {
         }
     }
 }
+
+// import media queries
+@import "media";
