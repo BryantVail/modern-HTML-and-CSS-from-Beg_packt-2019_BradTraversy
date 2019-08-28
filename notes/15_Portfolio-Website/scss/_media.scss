@@ -120,8 +120,11 @@
 
     //footer
     #main-footer {
+        //these heights are interesting to me
+        //why have both values along with padding?
         height: 7rem;
         .footer-content {
+            //all footer contents
             flex-direction: column;
             padding: 1rem;
             height: 6rem;
