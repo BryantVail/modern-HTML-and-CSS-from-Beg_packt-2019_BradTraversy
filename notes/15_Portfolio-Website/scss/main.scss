@@ -164,16 +164,20 @@ img {
 
             // .process-icon
             &-icon {
+                // display
                 //center text (the icon)
                 display: flex;
                 justify-content: center;
                 align-content: center;
+
+                // position
                 position: relative;
                 border-radius: 50%;
                 background: var(--dark-color);
                 color: set-text-color(#333);
                 // padding is moving the icon out of position
 
+                // spacing
                 margin-right: auto;
                 margin-left: auto;
                 height: 130px;
