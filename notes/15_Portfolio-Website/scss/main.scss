@@ -1,6 +1,7 @@
 @import "config";
 @import "utilities";
 @import "work";
+@import "media";
 
 //Clear
 * {
@@ -127,7 +128,8 @@ img {
             }
         }
     }
-    /*home section-b*/
+
+    /* section#home-b */
     &-b {
         // 4 column wide grid
         .stats {
@@ -155,6 +157,9 @@ img {
             }
         } //end .stats
     } //end &-b
+
+    // section#home-c
+    //   '.process', 4 steps to success
     &-c {
         //section container
         .process {
@@ -240,6 +245,8 @@ img {
 } //end #home
 
 #about {
+    // section#about-a; //about page, section#about-a
+    //   bioimage, bio text, awards(3)
     &-a {
         .about-info {
             display: grid;
@@ -276,6 +283,9 @@ img {
             margin: 1rem;
         }
     } // end about-a
+
+    // section#about-b
+    //  progress bars
     &-b {
         .progress {
             overflow: hidden;
@@ -293,7 +303,10 @@ img {
         }
     } //end #about-b
 
+    // section#about-c
+    //   clients logos
     &-c {
+        // client-logos
         .about-logos {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
@@ -303,6 +316,8 @@ img {
 
     &-d {
         background: $medium-color;
+
+        // section#about-d.testimonials
         .testimonials {
             display: grid;
             grid-template-columns: repeat(4, 1fr);

@@ -36,6 +36,7 @@
                         </li>
                     </ul>
                 </nav>
+                <!--end '#main-nav', navbar-->
             </div>
         </header>
 
@@ -43,48 +44,50 @@
         <!-- Contact Form -->
         <section id="contact-a" class="text-center pad-y-3">
             <div class="container">
+                <!-- form header text -->
                 <h2 class="section-title">Contact Us</h2>
                 <div class="bottom-line"></div>
                 <p class="lead">Here is how you can reach us</p>
 
                 <!-- form -->
-                <form>
+                <form method="POST" data-netlify="true" data-netlify-recaptcha="true">
                     <!--  -->
                     <div class="text-fields">
                         <input
-                            type="text"
                             name="name"
                             id="name"
+                            type="text"
                             class="text-input name-input"
                             placeholder="Name"
                         />
                         <input
-                            type="text"
                             name="subject"
                             id="subject"
+                            type="text"
                             class="text-input subject-input"
                             placeholder="Subject"
                         />
                         <input
-                            type="email"
                             name="email"
                             id="email"
+                            type="email"
                             class="text-input email-input"
                             placeholder="email address"
                         />
                         <input
-                            type="text"
                             name="phone"
                             id="phone"
+                            type="text"
                             class="text-input phone-input"
                             placeholder="phone number"
                         />
                         <textarea
-                            name="name"
-                            id="name"
+                            name="message"
+                            id="message"
                             class="text-input message-input"
                             placeholder="Enter Message"
-                        ></textarea>
+                        >
+                        </textarea>
                     </div>
                     <!-- end textfields -->
                     <button type="submit" class="btn-dark">Submit</button>
@@ -92,8 +95,8 @@
             </div>
         </section>
 
-        <!-- section b -->
-        <!-- contact info -->
+        <!-- section#contact-b -->
+        <!-- contact info panels -->
         <section id="contact-b" class="pad-y-3 bg-dark">
             <div class="container">
                 <!-- grid container -->

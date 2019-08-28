@@ -45,6 +45,16 @@
     }
 } //end @media(max-width: 912px)
 
+// @media(max-width: 680px)
+//
+@media (max-width: 680px) {
+    #home-a {
+        .specials {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+
 //all:
 //  change: grid-template-column: 1fr;
 //home:
@@ -56,9 +66,14 @@
 //      li: add padding
 //    #header
 //      &-home
+//  stack grid columns (1fr)
+//   '#home-b   .stats'
+//   '#home-c   .process'
+//   '#about-d  .testimonials'
+//   '#work-a   .items'
 @media (max-width: 500px) {
-    //nav
-    //logo on top
+    //#main-nav
+    //  1. move logo on top of the nav-links
     #main-nav {
         // stack elements of the flex-container
         flex-direction: column;
@@ -89,11 +104,16 @@
     }
 
     //stack grid columns (1fr)
+    //   '#home-b   .stats'
+    //   '#home-c   .process'
+    //   '#about-d  .testimonials'
+    //   '#work-a   .items'
     #home-a .specials,
     #home-b .stats,
     #home-c .process,
     #about-d .testimonials,
-    #work-a .items {
+    #work-a .items,
+    #contact-b .contact-info {
         grid-template-columns: 1fr;
     }
 
@@ -118,6 +138,75 @@
         }
     }
 
+    // About Page// About Page// About Page
+    #about {
+        &-a {
+            .about-info {
+                //stack grid
+                grid-template-areas:
+                    "bioimage"
+                    "bio"
+                    "award1"
+                    "award2"
+                    "award3";
+            }
+        } //end section#about-a, Bio Section
+
+        // section#about-c
+        //   '.about-logos', client logos
+        &-c {
+            // 4 wide to 2 over 2
+            .about-logos {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        // 'section#about-c', testimonials
+        //    (handled at earlier media query)
+    } //end section#about
+
+    // Contact Page// Contact Page// Contact Page
+    #contact {
+        // section#contact-a
+        //
+        &-a {
+            .text-fields {
+                grid-template-areas:
+                    "name"
+                    "subject"
+                    "email"
+                    "phone"
+                    "message";
+            }
+        }
+
+        // #contact-b
+        &-b {
+            .contact-info {
+                div {
+                    margin-bottom: 1rem;
+                    padding-bottom: 1rem;
+                    border-bottom: 2px #555 solid;
+
+                    &:last-child {
+                        border: none;
+                        margin-bottom: 0;
+                        padding-bottom: 0;
+                    }
+                }
+            }
+        }
+
+        // #contact-c
+        //   "Lets Start Your Next Project"
+        &-c {
+            h1 {
+                // from 4 to 2rem for font-size
+                font-size: 2rem;
+            }
+        }
+    }
+
     //footer
     #main-footer {
         //these heights are interesting to me
@@ -131,3 +220,42 @@
         }
     }
 } //end @media(max-width: 500px)
+
+// Media Query Landscape
+@media (max-height: 580px) {
+    #header-home {
+        .header-content {
+            padding-top: 3rem;
+
+            // animated text
+            // h1 with a span as a child
+            h1 {
+                font-size: 3.7rem;
+            }
+        }
+    }
+}
+@media (max-height: 480px) {
+    #header-home {
+        .header-content {
+            h1 {
+                font-size: 3.2rem;
+            }
+            p {
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+}
+@media (max-height: 380px) {
+    #header-home {
+        .header-content {
+            padding-top: 2rem;
+
+            h1 {
+                font-size: 2.5rem;
+            }
+        }
+    }
+}

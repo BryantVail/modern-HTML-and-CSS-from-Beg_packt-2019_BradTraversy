@@ -197,6 +197,107 @@ input[class^="btn-"]:hover {
     opacity: 0.7;
     margin: 0; }
 
+@media (max-width: 800px) {
+  #header-home {
+    height: 30rem; }
+    #header-home .header-content {
+      padding-top: 5rem; } }
+
+@media (max-width: 912px) {
+  #home-c .process {
+    grid-template-columns: repeat(2, 1fr); }
+    #home-c .process-icon {
+      height: 100px;
+      width: 100px;
+      line-height: 100px; }
+      #home-c .process-icon .process-step {
+        width: 35px;
+        height: 35px;
+        line-height: 35px; }
+      #home-c .process-icon:hover {
+        height: 120px;
+        width: 120px;
+        line-height: 120px; }
+        #home-c .process-icon:hover .process-step {
+          height: 45px;
+          width: 45px;
+          line-height: 45px; } }
+
+@media (max-width: 680px) {
+  #home-a .specials {
+    grid-template-columns: repeat(2, 1fr); } }
+
+@media (max-width: 500px) {
+  #main-nav {
+    flex-direction: column;
+    align-items: center; }
+    #main-nav li {
+      padding: 1rem; }
+  #header-home {
+    height: 10rem;
+    border-bottom: 3px solid #ffbc00;
+    background-position: 20% 30%; }
+    #header-home .header-content {
+      display: none; }
+  #header-inner {
+    height: 10rem; }
+  #home-a .specials,
+  #home-b .stats,
+  #home-c .process,
+  #about-d .testimonials,
+  #work-a .items,
+  #contact-b .contact-info {
+    grid-template-columns: 1fr; }
+  #home-a .specials div {
+    border-bottom: 1px lightgray solid;
+    padding-bottom: 1rem; }
+    #home-a .specials div:last-child {
+      border: none;
+      padding-bottom: 0; }
+  #home-b .stats div {
+    padding: 2rem 0 1rem 0; }
+  #about-a .about-info {
+    grid-template-areas: "bioimage" "bio" "award1" "award2" "award3"; }
+  #about-c .about-logos {
+    grid-template-columns: repeat(2, 1fr); }
+  #contact-a .text-fields {
+    grid-template-areas: "name" "subject" "email" "phone" "message"; }
+  #contact-b .contact-info div {
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px #555 solid; }
+    #contact-b .contact-info div:last-child {
+      border: none;
+      margin-bottom: 0;
+      padding-bottom: 0; }
+  #contact-c h1 {
+    font-size: 2rem; }
+  #main-footer {
+    height: 7rem; }
+    #main-footer .footer-content {
+      flex-direction: column;
+      padding: 1rem;
+      height: 6rem; } }
+
+@media (max-height: 580px) {
+  #header-home .header-content {
+    padding-top: 3rem; }
+    #header-home .header-content h1 {
+      font-size: 3.7rem; } }
+
+@media (max-height: 480px) {
+  #header-home .header-content h1 {
+    font-size: 3.2rem; }
+  #header-home .header-content p {
+    margin-top: 1rem;
+    margin-bottom: 1rem; } }
+
+@media (max-height: 380px) {
+  #header-home .header-content {
+    padding-top: 2rem; }
+    #header-home .header-content h1 {
+      font-size: 2.5rem; } }
+
 * {
   margin: 0;
   padding: 0;
@@ -272,7 +373,7 @@ img {
 
 #home {
   /*home section-a*/
-  /*home section-b*/ }
+  /* section#home-b */ }
   #home-a .specials {
     margin-top: 3rem;
     display: grid;
@@ -495,6 +596,10 @@ img {
           width: 45px;
           line-height: 45px; } }
 
+@media (max-width: 680px) {
+  #home-a .specials {
+    grid-template-columns: repeat(2, 1fr); } }
+
 @media (max-width: 500px) {
   #main-nav {
     flex-direction: column;
@@ -513,7 +618,8 @@ img {
   #home-b .stats,
   #home-c .process,
   #about-d .testimonials,
-  #work-a .items {
+  #work-a .items,
+  #contact-b .contact-info {
     grid-template-columns: 1fr; }
   #home-a .specials div {
     border-bottom: 1px lightgray solid;
@@ -523,9 +629,44 @@ img {
       padding-bottom: 0; }
   #home-b .stats div {
     padding: 2rem 0 1rem 0; }
+  #about-a .about-info {
+    grid-template-areas: "bioimage" "bio" "award1" "award2" "award3"; }
+  #about-c .about-logos {
+    grid-template-columns: repeat(2, 1fr); }
+  #contact-a .text-fields {
+    grid-template-areas: "name" "subject" "email" "phone" "message"; }
+  #contact-b .contact-info div {
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px #555 solid; }
+    #contact-b .contact-info div:last-child {
+      border: none;
+      margin-bottom: 0;
+      padding-bottom: 0; }
+  #contact-c h1 {
+    font-size: 2rem; }
   #main-footer {
     height: 7rem; }
     #main-footer .footer-content {
       flex-direction: column;
       padding: 1rem;
       height: 6rem; } }
+
+@media (max-height: 580px) {
+  #header-home .header-content {
+    padding-top: 3rem; }
+    #header-home .header-content h1 {
+      font-size: 3.7rem; } }
+
+@media (max-height: 480px) {
+  #header-home .header-content h1 {
+    font-size: 3.2rem; }
+  #header-home .header-content p {
+    margin-top: 1rem;
+    margin-bottom: 1rem; } }
+
+@media (max-height: 380px) {
+  #header-home .header-content {
+    padding-top: 2rem; }
+    #header-home .header-content h1 {
+      font-size: 2.5rem; } }
