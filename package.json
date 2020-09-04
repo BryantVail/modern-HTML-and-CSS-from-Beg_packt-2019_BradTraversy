@@ -23,6 +23,6 @@
   },
   "homepage": "https://github.com/BryantVail/modern-HTML-and-CSS-from-Beg_packt-2019_BradTraversy#readme",
   "dependencies": {
-    "node-sass": "^4.12.0"
+    "node-sass": "^4.13.1"
   }
 }
